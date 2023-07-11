@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.active, .btn-1:hover
+.btn-1:active
 {
     background-color: coral;
 }
@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.active, .btn-2:hover
+.btn-2:active
 {
     background-color: coral;
 }
@@ -48,7 +48,7 @@
     cursor: pointer;
 }
 
-.active, .btn-3:hover
+.btn-3:active
 {
     background-color: coral;
 }
@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 
-.active, .btn-4:hover
+.btn-4:active
 {
     background-color: coral;
 }
