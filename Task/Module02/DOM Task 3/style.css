@@ -1,0 +1,22 @@
+
+body{
+    background-color: rgba(128, 128, 128, 0.415);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+thead {
+    background-color: blueviolet;
+    color: wheat;
+}
+
+table{
+    width: 50%;
+}
+
+tr:nth-child(even){
+    background-color: gray;
+}
