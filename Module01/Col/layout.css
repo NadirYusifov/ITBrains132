@@ -1,0 +1,31 @@
+.container {
+    width: 85%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-3 {
+    width: calc(100%/12*3);
+}
+
+.col-12 {
+    width: calc(100%12*12);
+}
+
+.col-3, .col-12, .col-md-10{
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 980px) {
+    .col-md-10 {
+        width: calc(100%/12*10);
+    }
+}

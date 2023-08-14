@@ -1,0 +1,49 @@
+    @media screen and (min-width: 280px) and (max-width: 1140px) {
+        .fa {
+            font-size: 13px;
+        }
+
+        li a {
+            width: 25px;
+            height: 25px;
+        }
+
+        ul {
+            left: 5px;
+        }
+    }
+
+    @media screen and (min-width: 350px) and (max-width: 1140px) {
+        .fa {
+            font-size: 15px;
+        }
+
+        li a {
+            width: 34px;
+            height: 34px;
+        }
+
+        ul {
+            left: 10px;
+        }
+    }
+
+
+    @media screen and (min-width: 750px) and (max-width: 1202px) {
+        .fa {
+            font-size: 25px;
+        }
+
+        .box-content h3 {
+            font-size: 30px;
+        }
+
+        .box-content p {
+            font-size: 20px;
+        }
+
+        li a {
+            width: 65px;
+            height: 65px;
+        }
+    }
