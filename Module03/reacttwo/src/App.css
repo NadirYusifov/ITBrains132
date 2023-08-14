@@ -1,0 +1,22 @@
+.users-cart{
+    width: 400px;
+    padding: 20px;
+    background-image:
+    radial-gradient(
+      yellow,
+      #f06d06);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+img{
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+p{
+  background-color: #ffffff9e;
+}
