@@ -1,0 +1,84 @@
+.menu-wrapper {
+    background-color: green
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+li a {
+    padding: 10px;
+}
+
+li a:hover {
+    color: yellow;
+}
+
+h2 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-right input {
+    margin-right: 10px;
+}
+
+input {
+    padding-left: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+    background-color: yellowgreen;
+}
+
+button:hover {
+    background-color: yellow;
+    box-shadow: 0px 0px 20px yellow;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(234, 234, 121);
+}
+
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #616161;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+p a {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    color: yellow;
+
+}

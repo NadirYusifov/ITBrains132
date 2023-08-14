@@ -1,0 +1,7 @@
+th button{
+    border: none;
+}
+
+th button:active{
+    background-color: blueviolet;
+}

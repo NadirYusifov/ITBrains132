@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-between">
+            <div class="col-4">
+                <form action="">
+                    <div class="form-group mb-4">
+                        <input type="text" id="fullName" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" id="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="password" id="pass" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="form-group ">
+                        <input type="submit" id="userAdd" class="btn btn-primary w-100" value="Submit">
+                        <input type="submit" id="changeUser" class="btn btn-secondary w-100 d-none" value="Change">
+                    </div>
+                </form>
+            </div>
+            <div class="col-7">
+                <input type="text" id="search" class="form-control mb-3" placeholder="Search...">
+                <table class="table" id="myTable">
+                    <thead>
+                        <tr>
+                            <th class="sortBtn" style="cursor: pointer;">#</th>
+                            <th class="sortBtn" style="cursor: pointer;">Full Name</th>
+                            <th class="sortBtn" style="cursor: pointer;">Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Js file links -->
+    <script src="./main.js"></script>
+
+    <!-- b5 js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+        <!-- <script>
+            function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+        </script>
+</body> -->
+</html>
