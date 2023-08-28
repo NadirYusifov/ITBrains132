@@ -1,0 +1,127 @@
+.footer-area {
+    padding-top: 70px;
+    height: 100%;
+    background: #070707;
+}
+
+.footer-logo {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 153.5%;
+    margin-bottom: 40px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-title p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.footer-title li{
+    font-size: 18px;
+}
+
+.footer-tag {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.footer-end-content {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190.6%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.footer-scmedia li {
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.footer-scmedia a {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.footer-scmedia  p{
+    position: absolute;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    padding-left: 40px;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+h4 {
+    margin-bottom: 35px;
+}
+
+hr {
+    border-top: 3px solid white;
+}
+
+@media screen and (max-width:567px) {
+    .footer-logo h4{
+        margin-top: 35px;
+    }
+
+    .footer-scmedia li {
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background-color: #FFF;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-bottom: 16px;
+    }
+
+    .footer-scmedia a {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 10px;
+    }
+    
+}

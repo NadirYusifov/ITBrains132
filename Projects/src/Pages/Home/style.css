@@ -1,0 +1,4 @@
+body {
+    background: linear-gradient(180deg, #39289F 0%, #422F9C 100%);
+    backdrop-filter: blur(7px);
+}
