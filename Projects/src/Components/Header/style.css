@@ -14,13 +14,13 @@
     margin-right: auto;
 }
 
-.nav-links {
+.nav-menu {
     display: flex;
     align-items: center;
-
+    transition: all 1s;
 }
 
-.nav-links li {
+.nav-menu li {
     list-style: none;
     margin-left: 50px;
 }
@@ -65,20 +65,22 @@ li a:hover {
         0 0 10px #FA9021,
         0 0 20px #FA9021,
         0 0 30px #FA9021;
-    }
-    
-    button {
-        display: none;
-        border: none;
-        background: transparent;
-        color: #fff;
-        display: none;
 }
+
+button {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    display: none;
+}
+
 
 /***** Header End *****/
 
 /***** Header Responsive Start *****/
 @media screen and (max-width: 900px) {
+
     .container-fluid {
         padding: 30px 40px 30px 40px;
     }
@@ -89,44 +91,54 @@ li a:hover {
         display: block;
         padding-right: 10px;
         margin: 0;
-        z-index: 1;
+        z-index: 10;
     }
-    
-    .nav-links-mobile li {
-        padding-bottom: 20px;
-        padding-left: 45px;
-    }
-    
+
+
+
     li a {
         font-size: 20px;
         font-weight: 300;
     }
-    
-    .nav-links {
-        width: 100%;
-        display: none;
-        position: relative;
-    }
-    
-    .nav-links-mobile {
-        position: absolute;
+
+    .nav-menu {
+        transition: all 1s;
+        position: fixed;
         display: block;
         background-color: #0092e9;
         background-image: linear-gradient(137deg, #001194 43%, #442e7c 85%);
         box-shadow: 5px 5px 25px 15px #0000003c;
-        width: 100%;
-        left: 0;
-        top: 0;
+        z-index: 9;
         padding-top: 100px;
+        inset: 0;
     }
-    
+
+    .nav-links {
+        bottom: 1000px;
+        top: -1000px;
+        opacity: 0;
+    }
+
+    .nav-links-mobile {
+        opacity: 1;
+        top: -1000px;
+
+    }
+
+
+    /* 
+    .nav-links li {
+        padding-bottom: 20px;
+        padding-left: 45px;
+    } */
+
     .mobile-menu-icon {
         display: block;
     }
 }
 
-@media screen and (max-width: 1200px){
-    .nav-links li{
+@media screen and (max-width: 1200px) {
+    .nav-menu li {
         margin-left: 35px;
     }
 }
