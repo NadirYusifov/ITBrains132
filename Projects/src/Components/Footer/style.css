@@ -125,3 +125,57 @@ hr {
     }
     
 }
+
+@media screen and (max-width:768px) {
+    .footer-logo h4{
+        margin-top: 35px;
+    }
+
+    .footer-scmedia li {
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background-color: #FFF;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-bottom: 16px;
+    }
+
+    .footer-scmedia a {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    .footer-logo h4{
+        margin-top: 35px;
+    }
+
+    .footer-scmedia li {
+        list-style: none;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background-color: #FFF;
+        border-radius: 50%;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-bottom: 16px;
+    }
+
+    .footer-scmedia a {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 10px;
+    }
+    
+}

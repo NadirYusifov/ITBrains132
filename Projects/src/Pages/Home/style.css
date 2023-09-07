@@ -1,4 +1,726 @@
-body {
-    background: linear-gradient(180deg, #39289F 0%, #422F9C 100%);
-    backdrop-filter: blur(7px);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::selection {
+    background: #fa9021;
 }
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      z-index: 1;
+    }
+}
+
+.hero-area {
+    padding-bottom: 130px;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-caption h1 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.hero-caption p {
+    line-height: 1.8;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.hero-btn {
+    border: none;
+    color: #fff;
+    background: #fa9021;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: Poppins;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.hero-btn:hover {
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+/* ======= Hero End ======= */
+
+.trending-games {
+    padding-bottom: 130px;
+}
+
+.trending-games-image img {
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.trending-games-caption {
+    font-family: Poppins;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.trending-games-caption p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.trending-games-caption button {
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.11);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.trending-games-card {
+    height: 100%;
+    padding: 10px 10px 0 10px;
+    background: #FFB75E;
+    background: linear-gradient(to right, #ED8F03, #FFB75E);
+    box-shadow: 0 15px 15px #00000053;
+    border-radius: 5px;
+}
+
+.trending-games-content h4 {
+    padding: 15px 15px 0 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.trending-raiting p {
+    padding: 0 15px 0 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.trend-genres p {
+    font-size: 14px;
+    font-family: Poppins;
+    padding: 15px 5px 0 15px;
+    font-weight: 500;
+}
+
+.game-platfroms p {
+    padding: 15px 0 0 15px;
+    margin-bottom: 0;
+}
+
+.new-game {
+    padding-bottom: 100px;
+    transform: scaleX(80deg)
+}
+
+.game-news p {
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.game-news h3 {
+    font-size: 30px;
+    color: #fff;
+    font-family: Poppins;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.game-news button{
+    border-radius: 50px;
+    background-color: #FA9021;
+    color:#fff;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    transition: all .5s;
+}
+
+.game-news button:hover{
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+.game-images-slider img {
+    width: 100%;
+    box-shadow: 0 15px 15px #00000053;
+    border-radius: 5px;
+}
+
+.game-about-content p {
+    color: #fff;
+    line-height: 1.8;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.game-about-content h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 1.5;
+}
+
+.game-about-content button{
+    background-color: #FA9021;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.game-about-content button:hover{
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+.game-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px #00000053;
+}
+
+.game-blog {
+    padding-bottom: 130px;
+}
+
+
+
+/* ========== Home Section 3 Start ========== */
+.gamebackground-image {
+    height: 100vh;
+    min-height: 700px;
+    background-position: center;
+    background-image: url(../../Assets/game-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.gamebackground-image::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    z-index: 1;
+}
+
+.game-content-first{
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.game-content-first h3 {
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.game-content-first p{
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.dev-logo{
+    padding-top: 25px;
+}
+
+.dev-logo span{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dev-logo span {
+    display: inline-flex;
+    color: #DC7000;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    padding: 15px;
+}
+
+.text p{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text span {
+    color: #DC7000;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay{
+    padding-bottom: 130px;
+}
+
+/*  */
+.game-method-area{
+    padding-bottom: 130px;
+}
+
+.method-wrapper{
+    background-color: #FA9021;
+    color: #000;
+    padding: 40px;
+}
+
+.method-logo span{
+    font-size: 40px;
+}
+
+.text-logo p{
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.8;
+    padding-top: 10px;
+}
+
+.text-logo h5{
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+
+/*  */
+.submit-content{
+    color: #fff;
+    font-family: Poppins;
+}
+
+.submit-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.submit-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    padding-bottom: 10px;
+}
+
+.submit-section{
+    padding-bottom: 130px;
+}
+
+.submit-wrapper{
+    background-color: #000;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.submit-wrapper-content{
+    color: #fff;
+    font-family: Poppins;
+}
+
+.submit-input{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-input input{
+    width: 350px;
+    height: 48px;
+    display: flex;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 120px 5px 20px;
+    font-family: Poppins;
+}
+
+.submit-input input:focus{
+    outline: none;
+}
+
+.submit{
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0 15px 0 15px;
+    border-radius: 8px;
+    position: absolute;
+    background-color: #DC7000;
+    color: #fff;
+    border: none;
+    font-family: Poppins;
+    margin-left: 5px;
+    transition: all .3s;
+}
+
+.submit:hover{
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+
+}
+
+/* ========== Responsive Start ========== */
+@media screen and (max-width: 576px) {
+    .hero-image {
+        display: none;
+    }
+
+    .trending-games-card {
+        height: 100%;
+        padding: 10px 10px 10px;
+        background: #FFB75E;
+        background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+        background: linear-gradient(to right, #ED8F03, #FFB75E);
+        box-shadow: 0 15px 15px #00000053;
+        border-radius: 5px;
+    }
+
+    .gamebackground-image {
+        height: 100vh;
+        min-height: 700px;
+        background-image: url(../../Assets/game-background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .gamebackground-image::before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), rgba(0, 0, 0, 0.54);
+        backdrop-filter: blur(2px);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .game-content-first{
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        display: none;
+    }
+
+    .trending-games-caption p {
+        font-size: 25px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .game-platfroms p {
+        padding: 10px 0 0 5px;
+        margin-bottom: 0;
+    }
+
+    .trend-genres p {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 500;
+        padding: 15px 0 0 10px;
+    }
+
+
+    .gamebackground-image {
+        height: 100vh;
+        background-image: url(../../Assets/game-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
+    .gamebackground-image::before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), rgba(0, 0, 0, 0.54);
+        backdrop-filter: blur(2px);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .game-content-first{
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        padding-top: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .game-content-first h3 {
+        font-size: 20px;
+        font-family: Poppins;
+        font-weight: 700;
+        line-height: 1.8;
+    }
+    
+    .game-content-first p{
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-image img {
+        width: 100%;
+    }
+
+    .hero-caption h1 {
+        font-size: 35px;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    .hero-caption p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #fff;
+        font-family: Poppins;
+    }
+
+    .trend-genres p {
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 600;
+        padding: 15px 0 0 10px;
+    }
+
+    .trending-games-content h4 {
+        padding: 15px 10px 0 10px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 20px;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .trending-games-content p {
+        padding: 15px 10px 0 10px;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .game-platfroms p {
+        padding: 10px 0 0 5px;
+        margin-bottom: 0;
+    }
+    .game-about-content h3 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 1.5;
+        padding-top: 20px;
+    }
+    
+    .game-news button{
+        border-radius: 50px;
+        background-color: #FA9021;
+        color:#fff;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 20px;
+        transition: all .5s;
+    }
+    
+    .gamebackground-image {
+        height: 100vh;
+        min-height: 1000px;
+        background-image: url(../../Assets/game-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+    }
+    
+    .gamebackground-image::before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), rgba(0, 0, 0, 0.54);
+        backdrop-filter: blur(2px);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .game-content-first{
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .game-content-first h3 {
+        font-size: 25px;
+        font-family: Poppins;
+        font-weight: 700;
+        line-height: 1.8;
+    }
+    
+    .game-content-first p{
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 400;
+        line-height: 1.8;
+        padding-bottom: 30px;
+    }
+
+    .dev-logo{
+        padding-top: 30px;
+    }
+
+    .dev-logo span{
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 50px;
+        z-index: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    
+    .dev-logo span {
+        display: inline-flex;
+        color: #DC7000;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+        padding: 15px;
+    }
+    
+    .text p{
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .text-arrow span {
+        color: #DC7000;
+        z-index: 1;
+    }
+
+    /*  */
+    .submit-input input{
+        width: 350px;
+        height: 48px;
+        display: flex;
+        border: none;
+        border-radius: 8px;
+        padding: 5px 180px 5px 20px;
+        font-family: Poppins;
+        font-size: 14px;
+    }
+
+    .submit{
+        right: 5px;
+        top: 5px;
+        bottom: 5px;
+        padding: 0 15px 0 15px;
+        border-radius: 8px;
+        position: absolute;
+        background-color: #DC7000;
+        color: #fff;
+        border: none;
+        font-family: Poppins;
+        margin-left: 5px;
+        transition: all .3s;
+    }
+    
+    .submit:hover{
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+    
+    }
+
+
+    
+}
+
+@media screen and (max-width:1200px) {
+    .trend-genres p {
+        display: flex;
+    }
+
+
+}
+
+/* ========== Responsive End ==========  */

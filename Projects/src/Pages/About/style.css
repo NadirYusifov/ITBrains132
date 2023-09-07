@@ -1,3 +1,61 @@
-body{
-    background: linear-gradient(177deg, #3B2A9F 43.02%, rgba(47, 69, 182, 0.44) 84.17%, rgba(114, 138, 185, 0.23) 100%);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hero-about-image img{
+    width: 100%;
+}
+
+.hero-about-caption h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero-about-caption p{
+    color: #fff;
+    line-height: 1.8;
+    font-family: Poppins;
+}
+
+.hero-btn{
+    border: none;
+    color: #fff;
+    background: #fa9021;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: Poppins;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.hero-btn:hover{
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+@media screen and (max-width:576px) {
+    .hero-about-image img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .hero-about-caption h1{
+        color: #fff;
+        font-size: 40px;
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    
+    .hero-about-caption p{
+        color: #fff;
+        line-height: 1.8;
+        font-family: Poppins;
+        font-size: 18px;
+    }
 }
