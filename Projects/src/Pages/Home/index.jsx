@@ -198,7 +198,7 @@ function Home() {
                   <img src={gameimage} />
                 </div>
               </div>
-              <div className='col-xl-5 col-lg-6 col-md-6 col-sm-5' data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
+              <div className='col-xl-5 col-lg-6 col-md-6 col-sm-5' data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
                 <div className='game-about-content'>
                   <h3>Lorem Ipsum</h3>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -320,7 +320,7 @@ function Home() {
           <div className='submit-wrapper'>
             <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex align-items-center flex-wrap justify-content-between'>
               <div className='submit-wrapper-content'>
-                <h3>Lorem Ipsum</h3>
+                <h3>Stay in the loop</h3>
                 <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p>
               </div>
               <div className='submit-input'>
@@ -329,9 +329,9 @@ function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
+      
       <Footer />
     </div>
   )

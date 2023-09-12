@@ -1,5 +1,8 @@
+/* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/* ========== Root Exchange etc. ========== */
 ::selection {
     background: #fa9021;
 }
@@ -13,6 +16,8 @@
     }
 }
 
+
+/* ========== Home Section 1 Start (Hero) ==========*/
 .hero-area {
     padding-bottom: 130px;
 }
@@ -53,9 +58,10 @@
         0 0 20px #FA9021,
         0 0 30px #FA9021;
 }
+/* ========== Home Section 1 End (Hero) ========== */
 
-/* ======= Hero End ======= */
 
+/* ========== Home Section 2 Start (Trending Games) ========== */
 .trending-games {
     padding-bottom: 130px;
 }
@@ -117,7 +123,10 @@
     padding: 15px 5px 0 15px;
     font-weight: 500;
 }
+/* ========== Home Section 2 End (Trending Gmaes) ==========*/
 
+
+/* ========== Home Section 3 Start (Game News) ==========*/
 .game-platfroms p {
     padding: 15px 0 0 15px;
     margin-bottom: 0;
@@ -205,10 +214,10 @@
 .game-blog {
     padding-bottom: 130px;
 }
+/* ========== Home Secton 3 End (Game News) ========== */
 
 
-
-/* ========== Home Section 3 Start ========== */
+/* ========== Home Section 4 Start (Game Development) ========== */
 .gamebackground-image {
     height: 100vh;
     min-height: 700px;
@@ -297,8 +306,9 @@
 .overlay{
     padding-bottom: 130px;
 }
+/* ========== Home Setion 4 End (Game Development) ========== */
 
-/*  */
+/* ========== Home Section 5 Start (Game Method) ========== */
 .game-method-area{
     padding-bottom: 130px;
 }
@@ -327,9 +337,9 @@
     font-weight: 500;
     padding-top: 10px;
 }
+/* ========== Home Section 5 End (Game Method) ========== */
 
-
-/*  */
+/* ========== Home Section 6 Start (Game Email Submit) ========== */
 .submit-content{
     color: #fff;
     font-family: Poppins;
@@ -404,6 +414,8 @@
     bottom: 3px;
 
 }
+/* ========== Home Section 6 End (Game Email Submit) ========== */
+
 
 /* ========== Responsive Start ========== */
 @media screen and (max-width: 576px) {
@@ -722,5 +734,4 @@
 
 
 }
-
 /* ========== Responsive End ==========  */
