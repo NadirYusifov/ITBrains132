@@ -5,15 +5,30 @@
 /***** Header Start *****/
 .container-fluid {
     width: 100%;
-    padding: 30px 100px 30px 100px;
+    padding: 40px 100px 40px 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.header-area{
+    background: transparent;
+}
+
+.sticky-bar{
+    margin-top: 0;
+    top:0;
+    position: sticky;
+    z-index: 999999;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 35px 40px 0px rgba(0, 0, 0, 0.5);
+    transition: .3s all ease-out;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
     transition: all 1s;
+    position: relative;
 }
 
 .nav-menu li {
@@ -32,6 +47,10 @@ li a {
 li a:hover {
     color: #FA9021;
     transition: all ease-in-out 0.5s;
+}
+
+a:active{
+    color:#FA9021;
 }
 
 /* .header-menu{
@@ -125,10 +144,6 @@ li a:hover {
         display: flex;
         justify-content: center;
     }
-
-    .nav-menu{
-        visibility: visible;
-    }
     
     .nav-links-mobile {
         opacity: 1;
@@ -137,10 +152,6 @@ li a:hover {
     .menu-bar {
         display: block;
     }
-}
-
-@media screen and (max-width: 1200px) {
-    
 }
 
 /***** Header Responsive End *****/

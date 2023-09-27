@@ -1,0 +1,141 @@
+.hero_section_1{
+    padding-bottom: 170px;
+}
+
+.hero_section_text {
+    color: #fff;
+    text-align: center;
+}
+
+.hero_section_text h3 {
+    font-size: 33px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.hero_section_text p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.hero-number-counter {
+    width: 100%;
+    border-radius: 10px;
+    background: #1C140F;
+}
+
+.clients-icon {
+    padding-left: 100px;
+}
+
+.clients-icon span {
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    color: #DC7000;
+    font-size: 20px;
+    padding: 17px;
+    border-radius: 50px;
+    top: 0;
+    bottom: 0;
+}
+
+.clients-section h4{
+    color: #fff;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.clients-section p{
+    padding-left: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+.hero-stick span{
+    color: #fff;
+    padding-left: 140px;
+    font-size: 140px;
+    font-weight: 100;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hero-stick span{
+        color: #fff;
+        padding-left: 140px;
+        font-size: 130px;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .number-counter p{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-left: 0;
+    }
+
+    .number-counter h4{
+        padding-left: 0;
+        padding-top: 10px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    .hero-stick span{
+        display: none;
+    }
+
+    .clients-icon span {
+        width: 55px;
+        height: 55px;
+        display: inline-flex;
+        align-items: center;
+        background-color: #fff;
+        color: #DC7000;
+        font-size: 20px;
+        padding: 17px;
+        border-radius: 50px;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .clients-icon {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .hero-number-counter {
+        width: 100%;
+        border-radius: 10px;
+        background: #1C140F;
+        padding-top: 30px;
+    }
+
+    .hero_section_text h3 {
+        font-size: 33px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .hero_section_text p {
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 30px;
+        line-height: 1.7;
+    }
+}
+

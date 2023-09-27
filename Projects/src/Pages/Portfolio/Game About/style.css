@@ -1,0 +1,108 @@
+.game-platfroms p {
+    padding: 15px 0 0 15px;
+    margin-bottom: 0;
+}
+
+.blog-bl {
+    padding-bottom: 120px;
+}
+
+.team-blog-content p {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.team-blog-content h3 {
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.team-blog-content button{
+    border-radius: 50px;
+    background-color: #FA9021;
+    color:#fff;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    transition: all .5s;
+}
+
+.team-blog-content button:hover{
+    box-shadow: 0 0 5px #FA9021,
+    0 0 10px #FA9021,
+    0 0 20px #FA9021,
+    0 0 30px #FA9021;
+}
+
+.job-team-image img {
+    width: 100%;
+    box-shadow: 0 15px 15px #00000053;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+/*----------------------------------------*/
+
+.game-tech-content p {
+    color: #fff;
+    line-height: 1.8;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.game-tech-content h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 1.5;
+}
+
+.game-tech-content button{
+    background-color: #FA9021;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.game-tech-content button:hover{
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+.game-tech-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px #00000053;
+    margin-bottom: 40px;
+}
+
+
+.project-section{
+    padding-bottom: 130px;
+}
+
+.projects-content p{
+    font-weight: 600;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #fff;
+}
+
+.projects-content h3{
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.project-image img{
+    width: 100%;
+    box-shadow: 0 15px 15px #00000053;
+    border-radius: 5px;
+    margin-top: 20px;
+}

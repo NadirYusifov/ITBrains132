@@ -6,29 +6,13 @@ import Home from "./Pages/Home";
 import News from "./Pages/News";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
+import Contact from "./Pages/Contact";
+import Games from "./Pages/Games";
 import { Route, Routes } from "react-router-dom";
-import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
-  const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 5000)
-  }, [])
   return (
-    <div className="sweet-loading"> {
-loading ?
-      <ClipLoader
-        color={"black"}
-        loading={loading}
-        
-        size={150}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />:
     <>
 
       <Routes>
@@ -36,11 +20,11 @@ loading ?
         <Route element={<News />} path="/news" />
         <Route element={<About />} path="/about" />
         <Route element={<Portfolio />} path="/port" />
+        <Route element={<Contact />} path="/contact" />
+        <Route element={<Games/>} path="/games"/>
       </Routes>
-      
+
     </>
-    }
-    </div>
   )
 }
 

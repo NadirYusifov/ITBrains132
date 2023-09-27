@@ -1,0 +1,73 @@
+.comments-section-content h3 {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.comments-section-content p {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.comments-section-content {
+    text-align: center
+}
+
+.comments-section-1 {
+    padding: 50px;
+    background-color: #1C140F;
+    color: #fff;
+}
+
+.customer-section {
+    display: inline;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.profil-image img {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.comments-content p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    font-style: italic;
+}
+
+.customer-name p {
+    padding-left: 5px;
+    margin: 0;
+}
+
+/* Responsive Start */
+@media screen and (max-width: 992px) {
+    .comments-section-content h3 {
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .customer-section{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1980px){
+    .comments-section-content h3 {
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 500;
+        margin: 0;
+        width: 447.805px;
+    }
+}

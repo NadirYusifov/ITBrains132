@@ -47,7 +47,7 @@ function Home() {
   const [games, setgames] = useState([])
 
   useEffect(() => {
-    fetch("https://api.rawg.io/api/games?key=f7d9f8d780dd4407874ce99297dbfa4a&dates=2021-09-01,2022-09-30&platforms=18,1,7")
+    fetch("https://api.rawg.io/api/games?key=b8abad1909e84a40a30128c4c9e64c27&dates=2021-09-01,2022-09-30")
       .then(res => res.json())
       .then(res => setgames(res.results.slice(1, 4)))
   }, [])
