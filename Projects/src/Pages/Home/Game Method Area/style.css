@@ -1,0 +1,32 @@
+/* ========== Home Section 5 Start (Game Method) ========== */
+
+.game-method-area {
+    padding-bottom: 170px;
+}
+
+.method-wrapper {
+    background-color: #FA9021;
+    color: #000;
+    padding: 40px;
+}
+
+.method-logo span {
+    font-size: 40px;
+}
+
+.text-logo p {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1.8;
+    padding-top: 10px;
+}
+
+.text-logo h5 {
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+/* ========== Home Section 5 End (Game Method) ========== */

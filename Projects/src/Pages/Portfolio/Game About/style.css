@@ -1,11 +1,19 @@
+/* ========== Portfolio Section 2 Start (Game About) ========== */
+
+.projects-section {
+    padding-bottom: 170px;
+}
+
+.game-tech-section{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .game-platfroms p {
     padding: 15px 0 0 15px;
     margin-bottom: 0;
 }
 
-.blog-bl {
-    padding-bottom: 120px;
-}
 
 .team-blog-content p {
     color: #fff;
@@ -42,7 +50,6 @@
     border-radius: 5px;
     margin-top: 40px;
 }
-/*----------------------------------------*/
 
 .game-tech-content p {
     color: #fff;
@@ -82,11 +89,6 @@
     margin-bottom: 40px;
 }
 
-
-.project-section{
-    padding-bottom: 130px;
-}
-
 .projects-content p{
     font-weight: 600;
     line-height: 1.8;
@@ -106,3 +108,5 @@
     border-radius: 5px;
     margin-top: 20px;
 }
+
+/* ========== Portfolio Section 2 End (Game About) ========== */

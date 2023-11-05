@@ -3,7 +3,7 @@ import '../../Components/Subscribe/style.css'
 
 function SubscribeLoop() {
   return (
-    <div className='submit-section'>
+    <div className='submit-section' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="350" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out" data-aos-offset="100">
       <div className='container'>
         <div className='submit-content'>
           <h3>Lorem Ipsum</h3>
@@ -16,7 +16,9 @@ function SubscribeLoop() {
               <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p>
             </div>
             <div className='submit-input'>
-              <input type='email' placeholder='Enter email adsress' className='sumbit-eamil'></input>
+              <form>
+                <input type='text' placeholder='Enter email adsress' id='email' className='sumbit-eamil'></input>
+              </form>
               <button className='submit'>Continue</button>
             </div>
           </div>

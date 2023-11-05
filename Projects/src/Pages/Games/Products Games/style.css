@@ -1,3 +1,32 @@
-/* .trending-games{
-    margin-left: 300px;
-} */
+.trending-games-card:hover{
+    height: 120%;
+    transform: translateY(-20px);
+}
+
+.trending-games-card:hover .trend-genres{
+    
+    opacity: 1;
+}
+
+.trend-genres{
+    opacity: 0;
+}
+
+.trending-games-card{
+    transition: all .3s ease-in-out;
+}
+
+.rating-game-name a, h4 {
+    color: black;
+    text-decoration: none;
+}
+
+.rating-game-name h4:hover{
+    opacity: .7;
+}
+
+.game-pagination{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}

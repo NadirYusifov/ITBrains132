@@ -1,72 +1,90 @@
 import React, { useEffect, useState } from 'react'
-import { } from '@mui/icons-material'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import "../Products Games/style.css"
-import PropTypes from 'prop-types'
+import { Card } from 'react-bootstrap';
+import { Pagination } from '@mui/material';
+import ScrollToTop from '../../../Components/Scroll Top Page/ScrollTopPage';
 
-function ProductsGames({gameItem}) {
-    const [games, setgames] = useState([])
+
+
+function ProductsGames() {
+
+  const [games, setgames] = useState([])
+  const [page, setPage] = useState(1)
 
   useEffect(() => {
-    fetch(`https://api.rawg.io/api/games?key=b8abad1909e84a40a30128c4c9e64c27&dates=2020-09-01,2023-09-30&page_size=9000`)
+    fetch(`https://api.rawg.io/api/games?key=b8abad1909e84a40a30128c4c9e64c27&dates=2022-09-01,2023-09-30&page=${page}&page_size=24`)
       .then(res => res.json())
+      // .then(res => console.log(res))
       .then(res => setgames(res.results))
-  }, [])
+  }, [page])
 
 
- 
-  console.log(games);
-  
+
+  // games.map((item) => (
+  //   console.log(item.id)
+  // ))
+  // const dispatch = useDispatch()
+  // function addDetail(elem) {
+  //   dispatch(addDetailAction(elem))
+  // }
+
   return (
-    <div>
-        <div className='aside-navbar'>
-        <aside className='discover-navbar'>
-          <nav className='discover-navbar-nav'>
-            <div className='dicsover-sidebar-menu'>
-              <a className='#'>Home</a>
-            </div>
-          </nav>
-        </aside>
-        </div>
+    <div className='trend-games'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-xl-6'>
+            <article className='category-item'>
+              <div className=''>
 
-        <section className='trending-games'>
-        <div className='container'>
-          <div className='row'>
-            {games.map(game => {
-              return <div className="col-xl-3 col-lg-3 col-md-4 pb-4" key={game.trend}>
-                <div className='trending-games-card'>
-                  <div className="trending-games-image">
-                    <img src={game.background_image} style={{
-                      width: "100%"
-                    }} />
-                  </div>
-                  <div className='trending-games-content' key={game.trend}>
-                    <div className='raiting-game d-flex justify-content-between'>
-                      <h4>{game.name}</h4>
-                    </div>
-                  </div>
-                  <div className='trend-genres d-flex flex-wrap'>
-                    {game.genres.map(games => (
-                      <p key={games.trend}>{games.name}</p>
-                    ))}
-                  </div>
-                  <div className='trending-raiting d-flex flex-row-reverse' key={games.trend}>
-                    <p><b>Raitings:</b> {game.rating}</p>
-                  </div>
-                </div>
               </div>
-            })}
-          </div>
-        </div>
-      </section>
-    </div>
+            </article>
 
+
+          </div>
+          <section className='trending-games'>
+            <div className='container'>
+              <div className='row'>
+              </div>
+              <div className='row'>
+                {games.map((game) => {
+                  return (
+                    <div className="col-xl-3 col-lg-3 col-md-4 pb-4" key={game.id}>
+                      <div className='trending-games-card'>
+                        <div className="trending-games-image">
+                          <img src={game.background_image} style={{
+                            width: "100%"
+                          }} />
+                        </div>
+                        <div className='trending-games-content'>
+                          <div className='rating-game-name d-flex justify-content-between'>
+                            <Link to={`/detail/${game.slug}`}>
+                              <h4>{game.name}</h4>
+                            </Link>
+                          </div>
+                        </div>
+                        <div className='trend-genres d-flex flex-wrap justify-content-between'>
+                          <span>Genres</span>
+                          {game?.genres.map(games => (
+                            <p key={games.id}>{games.name}</p>
+                          ))}
+                        </div>
+                        <div className='trending-raiting d-flex flex-row-reverse'>
+                          <p><b>Raitings:</b> {game.rating}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
+                <Pagination className='game-pagination' showFirstButton showLastButton count={Infinity} shape='rounded' variant='outlined' size='large' sx={{ div: { color: " #fff" }, button: { color: "#fff" } }} onChange={(e, value) => setPage(value)} />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div >
+    </div >
 
   )
 }
 
 export default ProductsGames
-
-ProductsGames.PropTypes = {
-gameItem: PropTypes.object
-}

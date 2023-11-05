@@ -1,14 +1,20 @@
-.section-intro{
+/* ========== About Section 3 Start (Game Info) ========== */
+
+.section-intro {
+    padding-bottom: 170px;
+}
+
+.game-info-section {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #1C140F;
 }
 
-.section-intro-image img{
+.section-intro-image img {
     width: 100%;
 }
 
-.section-intro-content p{
+.section-intro-content p {
     color: #FFF;
     font-family: Poppins;
     font-size: 16px;
@@ -17,7 +23,7 @@
     line-height: 1.8;
 }
 
-.section-intro-content h2{
+.section-intro-content h2 {
     color: #FFF;
     font-family: Poppins;
     font-size: 28px;
@@ -27,17 +33,11 @@
     padding-bottom: 10px;
 }
 
-.section-intro{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #1C140F;
-}
-
-.section-intro-image img{
+.section-intro-image img {
     width: 100%;
 }
 
-.section-intro-content p{
+.section-intro-content p {
     color: #FFF;
     font-family: Poppins;
     font-size: 16px;
@@ -46,7 +46,7 @@
     line-height: 1.8;
 }
 
-.section-intro-content h2{
+.section-intro-content h2 {
     color: #FFF;
     font-family: Poppins;
     font-size: 28px;
@@ -56,7 +56,10 @@
     padding-bottom: 10px;
 }
 
-/* Responsive Start */
+/* ========== About Section 3 End (Game Info) ========== */
+
+
+/* ========== Responsive Start ==========*/
 @media screen and (max-width:992px) {
     .method-wrapper-worker {
         padding: 40px 25px 40px 25px;
@@ -68,3 +71,5 @@
         font-family: Poppins;
     }
 }
+
+/* ========== Responsive End ========== */

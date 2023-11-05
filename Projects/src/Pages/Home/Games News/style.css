@@ -1,0 +1,164 @@
+/* ========== Home Section 3 Start (Game News) ==========*/
+
+.game-platfroms p {
+    padding: 15px 0 0 15px;
+    margin-bottom: 0;
+}
+
+.new-game-blog {
+    padding-bottom: 100px;
+    transform: scaleX(80deg)
+}
+
+.game-news p {
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.game-news h3 {
+    font-size: 30px;
+    color: #fff;
+    font-family: Poppins;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.game-news button {
+    border-radius: 50px;
+    background-color: #FA9021;
+    color: #fff;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    transition: all .5s;
+}
+
+.game-news button:hover {
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+.game-images-slider img {
+    width: 100%;
+    box-shadow: 0 15px 15px #00000053;
+    border-radius: 5px;
+}
+
+.game-about-content p {
+    color: #fff;
+    line-height: 1.8;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.game-about-content h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 1.5;
+}
+
+.game-about-content button {
+    background-color: #FA9021;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.game-about-content button:hover {
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+.game-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px #00000053;
+}
+
+.game-blog {
+    padding-bottom: 170px;
+}
+
+/* ========== Home Secton 3 End (Game News) ========== */
+
+
+/* ========== Responsive Start ==========  */
+
+@media screen and (max-width: 992px) {
+    .game-about-content h3 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 1.5;
+        padding-top: 20px;
+    }
+
+    .game-news button {
+        border-radius: 50px;
+        background-color: #FA9021;
+        color: #fff;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 20px;
+        transition: all .5s;
+    }
+
+    .gamebackground-image {
+        height: 100vh;
+        min-height: 1000px;
+        background-image: url(../../Assets/game-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+    }
+
+    .gamebackground-image::before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), rgba(0, 0, 0, 0.54);
+        backdrop-filter: blur(2px);
+        position: absolute;
+        z-index: 1;
+    }
+
+    .game-content-first {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        text-align: center;
+        padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .game-content-first h3 {
+        font-size: 25px;
+        font-family: Poppins;
+        font-weight: 700;
+        line-height: 1.8;
+    }
+
+    .game-content-first p {
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 400;
+        line-height: 1.8;
+        padding-bottom: 30px;
+    }
+}
+
+/* ========== Responsive End ==========  */

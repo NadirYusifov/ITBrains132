@@ -1,0 +1,73 @@
+.detail-like-games-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.detail-like-games-card-section{
+    position: relative;
+    transition: all .7s ease-in-out;
+    border-radius: 8px;
+    background-color: #fa9021;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+.detail-like-games-card-section:hover{
+    transform: scale(1.04);
+    z-index: 2;
+    height: 130%;
+}
+
+.detail-like-games-card-content-item{
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: visible;
+    z-index: 2;
+    padding: 10px 10px 10px 10px;
+}
+
+.detail-like-games-card-section:hover .detail-like-games-card-content-item{
+    opacity: 1;
+    visibility: visible;
+}
+
+.detail-like-games-image img {
+    width: 100%;
+    height: 170px;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.detail-like-games-score span{
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 3px 5px 3px 5px; 
+    margin: 10px 0 0 0;
+}
+
+.detail-like-game-name a {
+    padding: 15px 0 0 0;
+    text-decoration: none;
+    margin: 0;
+}
+
+.detail-like-game-name:hover{
+    opacity: .7;
+}
+
+.detail-like-games-content{
+    color: #fff;
+}
+
+.detail-like-games-content-error{
+    display: none;
+}
+
+.detail-like-games-button {
+    margin-top: 70px;
+}

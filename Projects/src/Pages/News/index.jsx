@@ -1,13 +1,14 @@
 import React from 'react'
-import Header from '../../Components/Header'
-import Footer from '../../Components/Footer'
+import NewsHero from './News Hero'
+import NewsSection from './News Main'
+import Subscribe from '../../Components/Subscribe'
 
 function News() {
   return (
-    <div style={{background: "linear-gradient(161deg, #3165CB 0%, #030115 100%)"}}>
-      <Header />
-      News
-      <Footer />
+    <div style={{ background: "linear-gradient(161deg, #3165CB 0%, #030115 100%)" }}>
+      <NewsHero/>
+      <NewsSection />
+      <Subscribe/> 
     </div>
   )
 }

@@ -1,0 +1,150 @@
+/* ========== Home Section 1 Start (Hero) ========== */
+
+.hero-area {
+    padding-bottom: 170px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+}
+
+.hero-caption h1 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Poppins;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.hero-caption p {
+    line-height: 1.8;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.hero-btn {
+    border: none;
+    color: #fff;
+    background: #fa9021;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: Poppins;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.hero-btn:hover {
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+/* ========== Home Section 1 End (Hero) ========== */
+
+
+/* ========== Responsive Start ========== */
+
+@media screen and (max-width: 576px) {
+    .hero-image {
+        display: none;
+    }
+
+    .hero-area {
+        position: relative;
+    }
+
+    .hero-area {
+        padding-top: 130px;
+        padding-bottom: 170px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .hero-caption h1 {
+        font-size: 50px;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    .hero-caption p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #fff;
+        font-family: Poppins;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .hero-image {
+        display: none;
+    }
+
+    .hero-area {
+        padding-top: 130px;
+        padding-bottom: 170px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .hero-caption h1 {
+        font-size: 70px;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    .hero-caption p {
+        font-size: 20px;
+        line-height: 1.8;
+        color: #fff;
+        font-family: Poppins;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .hero-image img {
+        display: none;
+    }
+
+    .hero-area {
+        padding-top: 130px;
+        padding-bottom: 170px;
+        z-index: 2;
+        position: relative;
+    }
+
+
+    .hero-caption h1 {
+        font-size: 70px;
+        font-weight: 600;
+        font-family: Poppins;
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    .hero-caption p {
+        font-size: 20px;
+        line-height: 1.8;
+        color: #fff;
+        font-family: Poppins;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .hero-area {
+        padding-top: 130px;
+        padding-bottom: 170px;
+        z-index: 2;
+        position: relative;
+    }
+}
+
+/* ========== Responsive End ==========  */

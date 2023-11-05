@@ -1,3 +1,5 @@
+/* ========== About Section 2 Start (Work Us) ========== */
+
 .text-block {
     color: #fff;
     font-family: Poppins;
@@ -50,8 +52,11 @@
     font-style: italic;
 }
 
+/* ========== About Section 2 End (Work Us) ========== */
 
-/* Responsive Start */
+
+/* ========== Responsive Start ========== */
+
 @media screen and (max-width:992px) {
     .method-wrapper-worker {
         padding: 40px 25px 40px 25px;
@@ -63,3 +68,5 @@
         font-family: Poppins;
     }
 }
+
+/* ========== Responsive End ========== */

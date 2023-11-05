@@ -1,0 +1,130 @@
+.detail-game-tabs{
+    color: #fff;
+    padding-top: 80px;
+}
+
+.detail-achievement-image img{
+    border: 2px solid;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.detail-game-achievement{
+    margin: 15px;
+}
+
+.detail-achievement-game-item{
+    margin-bottom: 15px;
+}
+
+.detail-achievement-name h6{
+    margin: 0;
+}
+
+.detail-achievement-info p{
+    font-size: 10px;
+    margin: 0;
+}
+
+.detail-achievement-percent span{
+    margin: 0;
+    font-size: 12px;
+}
+
+.detail-game-development{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detail-development-item{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-development-background-image img{
+    border-radius: 8px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.detail-development-image-avatar img{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.detail-development-content{
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    width: 200px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, transparent 0%, black 70%);     
+}
+
+.detail-development-name h6{
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0;
+}
+
+.detail-development-positions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+}
+
+.detail-development-positions p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.detail-development-game {
+    width: 200px;
+    padding: 15px 10px 0 10px;
+}
+
+.detail-development-game a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.detail-development-game p{
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.detail-development-game a:hover {
+    opacity: .7;
+}
+
+.pacman-loader{
+    display: flex;
+    justify-content: center;
+}

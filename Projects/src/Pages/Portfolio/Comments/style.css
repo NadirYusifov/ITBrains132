@@ -1,3 +1,9 @@
+/* ========== Portfolio Section 3 Start (Comments Customer) ========== */
+
+.comments-section {
+    padding-bottom: 170px;
+}
+
 .comments-section-content h3 {
     display: inline-block;
     font-size: 35px;
@@ -17,7 +23,7 @@
     text-align: center
 }
 
-.comments-section-1 {
+.comments-item {
     padding: 50px;
     background-color: #1C140F;
     color: #fff;
@@ -46,9 +52,35 @@
 .customer-name p {
     padding-left: 5px;
     margin: 0;
+    font-family: Rubik;
 }
 
-/* Responsive Start */
+/* ========== Portfolio Section 3 End (Comments Customer) ========== */
+
+
+/*========== Responsive Start ==========*/
+@media screen and (max-width: 576px) {
+    .comments-section-content h3 {
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 500;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .comments-section-content p {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .customer-section {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .comments-section-content h3 {
         display: inline-block;
@@ -57,17 +89,43 @@
         margin: 0;
     }
 
-    .customer-section{
+    .customer-section {
         margin-bottom: 20px;
     }
-}
 
-@media screen and (min-width: 993px) and (max-width: 1980px){
     .comments-section-content h3 {
         display: inline-block;
         font-size: 35px;
         font-weight: 500;
         margin: 0;
-        width: 447.805px;
+        padding-bottom: 10px;
+    }
+
+    .comments-section-content p {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
+
+@media screen and (min-width: 993px) and (max-width: 1980px) {
+    .comments-section-content h3 {
+        display: inline-block;
+        font-size: 35px;
+        font-weight: 500;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .comments-section-content p {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* ========== Responsive End ========== */

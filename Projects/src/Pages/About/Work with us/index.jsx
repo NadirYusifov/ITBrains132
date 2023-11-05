@@ -3,26 +3,29 @@ import '../Work with us/style.css'
 
 function Work() {
 
-    const [users, setUsers] = useState([])
-    const [bodys, setBodys] = useState([])
-  
-    useEffect(() => {
-      fetch("https://dummyjson.com/posts")
-        .then(res => res.json())
-        .then(res => setUsers(res.posts))
-    }, [])
-  
-    useEffect(() => {
-      fetch("https://dummyjson.com/users")
-        .then(res => res.json())
-        .then(res => setBodys(res.users))
-    }, [])
+  // ========== Users API ==========
+  const [users, setUsers] = useState([])
+  const [bodys, setBodys] = useState([])
 
+  useEffect(() => {
+    fetch("https://dummyjson.com/posts")
+      .then(res => res.json())
+      .then(res => setUsers(res.posts))
+  }, [])
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/users")
+      .then(res => res.json())
+      .then(res => setBodys(res.users))
+  }, [])
+
+  
   return (
     <>
-     <div className='method-text'>
+      {/* ========== About Section 2 Start (Work Us) ========== */}
+      <div className='method-text'>
         <div className='container'>
-          <div className='text-block'>
+          <div className='text-block' data-aos="fade-right" data-aos-offset="100" data-aos-delay="350" data-aos-duration="2000">
             <p>Why work with us</p>
           </div>
         </div>
@@ -80,7 +83,7 @@ function Work() {
           </div>
         </div>
       </div>
-
+      {/* ========== About Section 2 End (Work Us) ========== */}
     </>
   )
 }

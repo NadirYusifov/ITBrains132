@@ -4,15 +4,18 @@ import { FaInstagram } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
-import {PiPhonePlus} from 'react-icons/pi'
-import {BiSolidMap} from 'react-icons/bi'
+import { PiPhonePlus } from 'react-icons/pi'
+import { BiSolidMap } from 'react-icons/bi'
 import Map from '../../../Assets/contact-map.png'
-import Point from '../../../Assets/map-point.png'
+
 
 function ContactHero() {
     return (
         <>
-            <div className='contact-section'>
+            {/* ========== Contact Sectin 1 Start (Contact Hero) ========== */}
+
+            {/* ========== Contact Hero Text Start ========== */}
+            <div className='contact-section' data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
                 <div className='container'>
                     <div className='row'>
                         <div className='text-contact'>
@@ -22,21 +25,24 @@ function ContactHero() {
                     </div>
                 </div>
             </div>
+            {/* ========== Contact Hero Text End ========== */}
 
-            <div className='contact-map'>
+
+            {/* ========== Contact Hero Map Start ========== */}
+            <div className='contact-map' data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
                 <div className='container'>
                     <div className='row'>
-                    <div className='contact-map-image'>
-                    <img src={Map} />
-                    </div>
-                    <div className='point-all'>
-                   
-                    </div>
+                        <div className='contact-map-image'>
+                            <img src={Map} />
+                        </div>
                     </div>
                 </div>
             </div>
+            {/* ========== Contact Hero Map End ========== */}
 
-            <div className='contact-info'>
+
+            {/* ========== Contact Hero Social Media Links Start ========== */}
+            <div className='contact-info' data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
                 <div className='container'>
                     <div className='row d-flex'>
                         <div className='col-xl-4 col-lg-4 col-md-4 col-sm-12'>
@@ -49,22 +55,31 @@ function ContactHero() {
                                 </ul>
                             </div>
                         </div>
+                        {/* ========== Contact Hero Social Media Links End ========== */}
 
+
+                        {/* ========== Contact Hero Phone Start ========== */}
                         <div className='col-xl-4 col-lg-4 col-md-4 col-sm-12'>
                             <div className='contact-phone'>
-                                <span><PiPhonePlus/> <a href='tel:+94 4444 5555 6'>+94 4444 5555 6</a></span>
+                                <span><PiPhonePlus /> <a href='tel:+94 4444 5555 6'>+94 4444 5555 6</a></span>
                             </div>
                         </div>
+                        {/* ========== Contact Hero Phone End ========== */}
 
+
+                        {/* ========== Contact Hero Location Start ========== */}
                         <div className='col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex'>
                             <div className='contact-location'>
-                                <span><BiSolidMap/></span>
+                                <span><BiSolidMap /></span>
                                 <p>8th floor, 379 Hudson St, New York, NY 10018</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* ========== Contact Hero Location End ========== */}
+
+            {/* ========== Contact Section 1 End (Contact Hero) ========== */}
         </>
     )
 }

@@ -1,0 +1,130 @@
+/* ========== Home Section 2 Start (Trending Games) ========== */
+
+.trending-games {
+    padding-bottom: 170px;
+}
+
+.trending-games-image img {
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.trending-games-caption {
+    font-family: Poppins;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.trending-games-caption p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.trending-games-caption button {
+    color: #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.11);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.trending-games-card {
+    height: 100%;
+    padding: 10px 10px 0 10px;
+    background: #FFB75E;
+    background: linear-gradient(to right, #ED8F03, #FFB75E);
+    box-shadow: 0 15px 15px #00000053;
+    border-radius: 5px;
+}
+
+.trending-games-content h4 {
+    padding: 15px 15px 0 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.trending-raiting p {
+    padding: 0 15px 0 15px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.trend-genres p {
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+/* ========== Home Section 2 End (Trending Gmaes) ==========*/
+
+
+/* ========== Responsive Start ========== */
+
+@media screen and (max-width: 576px) {
+    .trending-games-card {
+        height: 100%;
+        padding: 10px 10px 10px;
+        background: #FFB75E;
+        background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+        background: linear-gradient(to right, #ED8F03, #FFB75E);
+        box-shadow: 0 15px 15px #00000053;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trending-games-caption p {
+        font-size: 25px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .trend-genres p {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 500;
+        padding: 15px 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .trend-genres p {
+        font-size: 16px;
+        font-family: Poppins;
+        font-weight: 600;
+        padding: 15px 0 0 10px;
+    }
+
+    .trending-games-content h4 {
+        padding: 15px 10px 0 10px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 20px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .trending-games-content p {
+        padding: 15px 10px 0 10px;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .trend-genres p {
+        display: flex;
+    }
+}
+
+/* ========== Responsive End ==========  */
