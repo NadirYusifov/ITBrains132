@@ -68,7 +68,7 @@ function Header() {
       <div className='container'>
         <div className='menu-wrapper d-flex flex-wrap justify-content-between'>
           <div className='logo d-flex align-items-center'>
-            <p>LOGO</p>
+            <Link to={'/'}><p>The Game Universy</p></Link>
           </div>
     <div className='header-right d-flex align-items-center flex-wrap'>
     <ul className={Mobile ? "nav-menu nav-links-mobile" : "nav-menu nav-links"}

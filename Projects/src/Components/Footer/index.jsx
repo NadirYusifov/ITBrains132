@@ -14,7 +14,7 @@ function Footer() {
             <div className='col-xl-3 col-lg-3 col-md-8 col-sm-6 justify-content-between'>
               <div className='single-footer-caption'>
                 <div className='footer-logo'>
-                  <p>LOGO</p>
+                  <p>The Game Universy</p>
                 </div>
                 <div className='footer-title'>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

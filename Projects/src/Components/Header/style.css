@@ -73,10 +73,12 @@ li a:focus {
     display: none;
 } */
 
-.logo {
+.logo a{
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     color: #fff;
+    text-decoration: none;
+    margin: 0;
 }
 
 .contact-btn {
