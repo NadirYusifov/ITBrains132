@@ -9,7 +9,7 @@ function BreadCrumbs() {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`https://api.rawg.io/api/games/${id}?key=b8abad1909e84a40a30128c4c9e64c27&dates=2022-09-01,2023-09-30`)
+        fetch(`https://api.rawg.io/api/games/${id}?key=b9bc2788ba394d238eee7389bf54a97a`)
             .then(res => res.json())
             .then(res => setDetail(res))
         // .then(res => console.log(res))

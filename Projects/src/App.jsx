@@ -16,6 +16,7 @@ import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/Scroll Top Page/ScrollTopPage";
 import BackToTopButton from "./Components/Back To Top Button";
 import DetailGameTab from "./Pages/Detail Games/Detail Games Tabs";
+import GameDevelopers from "./Pages/Developers";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
         <Route element={<DetailGames />} path="/detail/:id" />
         <Route element={<DetailGameTab />} path="/detail/" />
         <Route element={<GamesPublishers/>} path="publisher/:id"/>
+        <Route element={<GameDevelopers/>} path="developers/:id"/>
       </Routes>
       <BackToTopButton />
       <Footer />

@@ -1,35 +1,44 @@
-.detail-like-games-card{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+/* ========== Detail Games Section 5 Start (Games Like) ========== */
+
+.detail-games-like {
+    padding-top: 130px;
 }
 
-.detail-like-games-card-section{
+.detail-like-games-content h3 {
+    padding-bottom: 50px;
+}
+
+.detail-like-game-name h4 {
+    margin: 0;
+}
+
+.detail-like-games-card-section {
     position: relative;
     transition: all .7s ease-in-out;
     border-radius: 8px;
     background-color: #fa9021;
     position: relative;
+    z-index: 2;
     padding: 10px 10px 10px 10px;
 }
 
-.detail-like-games-card-section:hover{
-    transform: scale(1.04);
+.detail-like-games-card-section:hover {
+    transform: translateY(-10px);
     z-index: 2;
     height: 130%;
 }
 
-.detail-like-games-card-content-item{
+.detail-like-games-card-content-item {
     position: absolute;
     left: 0;
     right: 0;
     opacity: 0;
     visibility: visible;
-    z-index: 2;
+    z-index: -2;
     padding: 10px 10px 10px 10px;
 }
 
-.detail-like-games-card-section:hover .detail-like-games-card-content-item{
+.detail-like-games-card-section:hover .detail-like-games-card-content-item {
     opacity: 1;
     visibility: visible;
 }
@@ -43,11 +52,25 @@
     object-position: 0 0;
 }
 
-.detail-like-games-score span{
+.detail-like-games-score span {
     border: 2px solid;
     border-radius: 8px;
-    padding: 3px 5px 3px 5px; 
+    padding: 3px 5px 3px 5px;
     margin: 10px 0 0 0;
+}
+
+.detail-like-games-ratings p {
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    padding: 2px 5px 2px 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.296);
+}
+
+.detail-like-games-ratings span {
+    color: yellow;
 }
 
 .detail-like-game-name a {
@@ -56,18 +79,96 @@
     margin: 0;
 }
 
-.detail-like-game-name:hover{
+.detail-like-game-name:hover {
     opacity: .7;
 }
 
-.detail-like-games-content{
-    color: #fff;
+.detail-like-games-content a{
+    color: black;
 }
 
-.detail-like-games-content-error{
+.detail-like-games-content-error {
     display: none;
 }
 
-.detail-like-games-button {
-    margin-top: 70px;
+.detail-like-games-genres {
+    font-size: 14px;
+    font-weight: 600;
 }
+
+.detail-like-games-released {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.detail-like-games-button button {
+    border: none;
+    border-radius: 8px;
+    background-color: #fa9021;
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    margin-top: 100px;
+    transition: all ease-in-out .5s;
+}
+
+.detail-like-games-button button:hover {
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+
+/* ========== Responsive Start ========== */
+@media screen and (max-width: 576px) {
+    .detail-like-games-card {
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .detail-like-games-card {
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .detail-like-games-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .detail-like-games-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .detail-like-games-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .detail-like-games-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/* ========== Responsive End ========== */
+
+/* ========== Detail Games Section 5 End (Games Like) ========== */

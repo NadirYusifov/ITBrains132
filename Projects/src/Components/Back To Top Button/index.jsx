@@ -29,7 +29,7 @@ const scrollUp = () => {
             position: 'fixed', 
             display: 'block',
             bottom: '30px',
-            right: '30px',
+            right: '50px',
             padding: '10px 15px 10px 15px',
             fontSize: '20px',
             borderRadius: '8px',

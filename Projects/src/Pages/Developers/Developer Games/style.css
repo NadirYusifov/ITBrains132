@@ -1,0 +1,170 @@
+/* ========== Developers Games Sction 2 Start ========== */
+
+.development-games-section-2 {
+    padding-bottom: 110px;
+}
+
+.development-games-card-section {
+    position: relative;
+    transition: all .7s ease-in-out;
+    border-radius: 8px;
+    background-color: #fa9021;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+.development-games-card-section:hover {
+    transform: translateY(-10px);
+    z-index: 2;
+    height: 140%;
+}
+
+.development-games-card-content-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: visible;
+    z-index: -2;
+    padding: 10px 10px 10px 10px;
+}
+
+.development-games-card-section:hover .development-games-card-content-item {
+    opacity: 1;
+    visibility: visible;
+}
+
+.development-games-image img {
+    width: 100%;
+    height: 170px;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.development-games-score span {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 3px 5px 3px 5px;
+    margin: 10px 0 0 0;
+}
+
+.development-games-ratings p {
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    padding: 2px 5px 2px 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.296);
+}
+
+.development-games-ratings span {
+    color: yellow;
+}
+
+.development-games-name a {
+    color: black;
+    padding: 15px 0 0 0;
+    text-decoration: none;
+    margin: 0;
+}
+
+.development-games-name h4 {
+    margin: 0;
+}
+
+.development-games-name:hover {
+    opacity: .7;
+}
+
+.development-games-content {
+    color: #fff;
+}
+
+.development-games-genres {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.development-games-released {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.development-games-content-error {
+    display: none;
+}
+
+.development-games-button button {
+    border: none;
+    border-radius: 8px;
+    background-color: #fa9021;
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    margin-top: 100px;
+    transition: all ease-in-out .5s;
+}
+
+.development-games-button button:hover {
+    box-shadow: 0 0 5px #FA9021,
+        0 0 10px #FA9021,
+        0 0 20px #FA9021,
+        0 0 30px #FA9021;
+}
+
+
+/* ========== Responsive Start ==========*/
+@media screen and (max-width: 576px) {
+    .development-games-card {
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .development-games-card {
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .development-games-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .development-games-card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .development-games-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .development-games-card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/*========== Responsive End ==========*/
+
+/* ========== Developers Games Section 2 End ========== */

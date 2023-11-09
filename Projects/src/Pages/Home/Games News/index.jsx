@@ -80,18 +80,18 @@ function GamesNews() {
   return (
     <>
       {/* ========== News Game Blog Section 1 Start ==========  */}
-      <div className='new-game-blog'>
+      <div className='new-game-blog' data-aos="fade-up" data-aos-duration="2000">
         <div className='new-game'>
           <div className='container'>
             <div className='row d-flex justify-content-between align-items-center'>
-              <div className='col-xl-5 col-lg-5 col-md-6 col-sm-12' data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
+              <div className='col-xl-5 col-lg-5 col-md-6 col-sm-12'>
                 <div className='game-news'>
                   <h3>New Games</h3>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1000s.</p>
                   <button>More details</button>
                 </div>
               </div>
-              <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12' data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out" data-aos-delay="400" data-aos-offset="100">
+              <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                 <div className='game-images-slider'>
                   <Slider {...settings}>
                     <img src={gameimage1} />
@@ -108,16 +108,16 @@ function GamesNews() {
       {/* ========== News Game Blog Section 1 End ==========  */}
 
       {/* ==========  News Game Blog Section 2 Start ==========  */}
-      <div className='game-blog'>
+      <div className='game-blog' data-aos="fade-up" data-aos-duration="2000">
         <div className='new-game'>
           <div className='container'>
             <div className='row d-flex justify-content-between align-items-center'>
-              <div className='col-xl-6 col-lg-5 col-md-6 col-sm-12' data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-anchor-placement="top-bottom" data-aos-offset="100">
+              <div className='col-xl-6 col-lg-5 col-md-6 col-sm-12' >
                 <div className='game-image'>
                   <img src={gameimage} />
                 </div>
               </div>
-              <div className='col-xl-5 col-lg-6 col-md-6 col-sm-12' data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
+              <div className='col-xl-5 col-lg-6 col-md-6 col-sm-12'>
                 <div className='game-about-content'>
                   <h3>Lorem Ipsum</h3>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>

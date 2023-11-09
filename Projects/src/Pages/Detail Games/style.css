@@ -1,23 +1,27 @@
-.games-detail{
+
+
+.games-detail {
     padding-top: 30px;
     color: #fff;
     font-family: Poppins;
 }
 
-.detail-game-description {
+.detail-games-description {
     padding-top: 80px;
 }
 
-.detail-game-item p, a, span{
+.detail-games-item p,
+a,
+span {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.detail-game-description h3{
+.detail-games-description h3 {
     padding-bottom: 15px;
 }
 
-.detail-game-description p{
+.detail-games-description p {
     font-size: 16px;
     line-height: 1.7;
 }
@@ -29,7 +33,7 @@
     object-fit: cover;
 }
 
-.detail-game-score span{
+.detail-games-score span {
     font-size: 20px;
     border: 2px solid;
     border-radius: 8px;
@@ -37,42 +41,52 @@
     margin: 0;
 }
 
-.detail-game-score p{
+.detail-games-score p {
     padding-right: 10px;
     margin: 0;
 }
 
-.detail-games-orginal{
+.detail-games-orginal {
     font-size: 16px;
     font-style: italic;
     font-weight: 600;
     opacity: 0.7;
 }
 
-.detail-games-orginal hr{
+.detail-games-orginal hr {
     border: 2px solid;
     margin-bottom: 30px;
 }
 
-.detail-game-score abbr[title] {
+.detail-games-score abbr[title] {
     border-bottom: none;
     text-decoration: none;
     cursor: default;
 }
 
-.detail-game-publisher a{
+.detail-games-publisher a {
     color: #fff;
     text-decoration: none;
 }
 
-.detail-game-publisher a:hover{
+.detail-games-developers a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.detail-games-publisher a:hover {
     color: #fff;
     opacity: 0.7;
 }
 
-.detail-game-website button{
+.detail-games-developers a:hover {
     color: #fff;
-    background-color: #fa9021;
+    opacity: 0.7;
+}
+
+.detail-games-website button {
+    color: #fff;
+    background-color: #dc7000;
     border: none;
     font-size: 18px;
     border-radius: 8px;
@@ -82,13 +96,56 @@
     transition: all .5s ease-in-out;
 }
 
-.detail-game-website button:hover{
-    box-shadow: 0 0 5px #FA9021,
-        0 0 10px #FA9021,
-        0 0 20px #FA9021,
-        0 0 30px #FA9021;
+.detail-games-website button:hover {
+    box-shadow: 0 0 5px #dc7000,
+        0 0 10px #dc7000,
+        0 0 20px #dc7000,
+        0 0 30px #dc7000;
 }
 
-.content-css span{
+.content-css span {
     font-size: 16px;
+    line-height: 1.7;
 }
+
+
+/* ========== Responsive Start ========== */
+
+@media screen and (max-width: 576px) {
+    .detail-games-header {
+        margin-top: 30px;
+    }
+
+    .detail-games-item p,
+    a,
+    span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .detail-games-header {
+        margin-top: 30px;
+    }
+
+    .detail-games-item p,
+    a,
+    span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .detail-games-header {
+        margin-top: 30px;
+    }
+
+    .detail-games-item p,
+    a,
+    span {
+        font-size: 20px;
+    }
+
+}
+
+/* ========== Responsive End ========== */

@@ -1,0 +1,158 @@
+/* ========== Detail Games Section 3 Start (Games Store) ========== */
+
+.detail-games-store {
+    padding-top: 50px;
+}
+
+.detail-games-store-head h3 {
+    color: #fff;
+}
+
+.detail-games-store-head-error {
+    display: none;
+}
+
+.detail-games-store-button button {
+    width: 190px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background-color: #dc7000;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 0 7px 0 7px;
+    transition: all .5s ease-in-out;
+}
+
+
+@media screen and (max-width: 576px) {
+    .detail-games-store {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .detail-games-store-item {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        visibility: visible;
+        margin-bottom: 15px;
+    }
+
+    .detail-games-store-item::-webkit-scrollbar {
+        width: 10px;
+        height: 4px;
+    }
+
+    .detail-games-store-item::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(47, 47, 47, 0.712)
+    }
+
+    .detail-games-store-button button {
+        width: 190px;
+        height: 50px;
+        padding: 0 7px 0 7px;
+        margin-bottom: 2px;
+    }
+
+    .detail-games-store-button .store-icon {
+        font-size: 20px;
+    }
+
+    .detail-games-store-button {
+        margin-right: 7px;
+    }
+}
+
+
+/* ========== Responive Start ========== */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .detail-games-store {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .detail-games-store-item {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        visibility: visible;
+        margin-bottom: 15px;
+    }
+
+    .detail-games-store-item::-webkit-scrollbar {
+        width: 10px;
+        height: 4px;
+    }
+
+    .detail-games-store-item::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(47, 47, 47, 0.712)
+    }
+
+    .detail-games-store-button button {
+        width: 190px;
+        height: 50px;
+        padding: 0 7px 0 7px;
+        margin-bottom: 2px;
+    }
+
+    .detail-games-store-button .store-icon {
+        font-size: 20px;
+    }
+
+    .detail-games-store-button .store-name {
+        font-size: 16px;
+    }
+
+    .detail-games-store-button {
+        margin-right: 7px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .detail-games-store {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+
+    .detail-games-store-item {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        visibility: visible;
+        margin-bottom: 15px;
+    }
+
+    .detail-games-store-item::-webkit-scrollbar {
+        width: 10px;
+        height: 4px;
+    }
+
+    .detail-games-store-item::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(47, 47, 47, 0.712)
+    }
+
+    .detail-games-store-button button {
+        width: 190px;
+        height: 50px;
+        padding: 0 7px 0 7px;
+        margin-bottom: 2px;
+    }
+
+    .detail-games-store-button .store-icon {
+        font-size: 20px;
+    }
+
+    .detail-games-store-button .store-name {
+        font-size: 16px;
+    }
+
+    .detail-games-store-button {
+        margin-right: 7px;
+    }
+}
+
+/* ========== Responsive End ========== */
+
+/* ========== Detail Games Section 3 (Games Store) ========== */

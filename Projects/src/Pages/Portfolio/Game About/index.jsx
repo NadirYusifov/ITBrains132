@@ -81,7 +81,7 @@ function GameAbout() {
 
 
       {/* ========== Job Team Blog 1 Start ========== */}
-      <div className='job-team-blog' data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
+      <div className='job-team-blog' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
         <div className='blog-bl'>
           <div className='container'>
             <div className='row d-flex justify-content-between align-items-center'>
@@ -105,7 +105,7 @@ function GameAbout() {
 
 
       {/* ========== Job Team Blog 2 Start ========== */}
-      <div className='game-tech-section' data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
+      <div className='game-tech-section' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
         <div className='blog-bl'>
           <div className='container'>
             <div className='row d-flex justify-content-between align-items-center'>
@@ -129,7 +129,7 @@ function GameAbout() {
 
 
       {/* ========== Job Team Blog 3 Start ========== */}
-      <div className='projects-section' data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
+      <div className='projects-section' data-aos="zoom-up" data-aos-duration="2000" data-aos-delay="400" data-aos-easing="ease-out" data-aos-offset="100">
         <div className='blog-bl'>
           <div className='container'>
             <div className='row d-flex justify-content-between align-items-center'>

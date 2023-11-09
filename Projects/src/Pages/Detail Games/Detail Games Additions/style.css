@@ -1,0 +1,175 @@
+/* ========== Detail Games Section 4 Start (Games Additions) ========== */
+
+.detail-games-additions-card-section{
+    padding-top: 130px;
+    padding-bottom: 110px;
+}
+
+.detail-games-additions-content h3{
+    margin-bottom: 50px;
+}
+
+.detail-games-additions-card-section{
+    position: relative;
+    transition: all .7s ease-in-out;
+    border-radius: 8px;
+    background-color: #fa9021;
+    position: relative;
+    z-index: 2;
+    padding: 10px 10px 10px 10px;
+}
+
+.detail-games-additions-card-section:hover{
+    transform: translateY(-10px);
+    z-index: 2;
+    height: 130%;
+}
+
+.detail-games-additions-card-content-item{
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: visible;
+    z-index: -2;
+    padding: 10px 10px 10px 10px;
+}
+
+.detail-games-additions-card-section:hover .detail-games-additions-card-content-item{
+    opacity: 1;
+    visibility: visible;
+}
+
+.detail-games-additions-image img {
+    width: 100%;
+    height: 170px;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.detail-games-additions-score span{
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 3px 5px 3px 5px; 
+    margin: 10px 0 0 0;
+}
+
+.detail-games-additions-ratings p{
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    padding: 2px 5px 2px 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.296);
+}
+
+.detail-games-additions-ratings span{
+    color: yellow;
+}
+
+.detail-games-additions-name a {
+    padding: 15px 0 0 0;
+    text-decoration: none;
+    margin: 0;
+    color: black;
+}
+
+.detail-games-additions-name h4 {
+    margin: 0;
+}
+
+.detail-games-additions-name:hover{
+    opacity: .7;
+}
+
+.detail-games-additions-content{
+    color: #fff;
+}
+
+.detail-games-additions-genres{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.detail-games-additions-released{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.detail-games-additions-content-error{
+    display: none;
+}
+
+.detail-games-additions-button button{
+    border: none;
+    border-radius: 8px;
+    background-color: #fa9021;
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    margin-top: 100px;
+    transition: all ease-in-out .5s;
+}
+
+.detail-games-additions-button button:hover{
+    box-shadow: 0 0 5px #FA9021,
+            0 0 10px #FA9021,
+            0 0 20px #FA9021,
+            0 0 30px #FA9021;
+}
+
+
+/* ========== Responsive Start ==========*/
+@media screen and (max-width: 576px) {
+    .detail-games-additions-card{
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .detail-games-additions-card{
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .detail-games-additions-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .detail-games-additions-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .detail-games-additions-card{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .detail-games-additions-card{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+/*========== Responsive End ==========*/
+
+/* ========== Detail Games Section 4 End (Games Additions) ========== */

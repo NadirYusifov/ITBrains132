@@ -14,9 +14,9 @@ import '../Detail Games/style.css'
 
 import { AiOutlineClockCircle } from 'react-icons/ai'
 import { HiOutlineCode } from 'react-icons/hi'
-import {TbWorld} from 'react-icons/tb'
-import {RiComputerLine} from 'react-icons/ri'
-import {TbSwords} from 'react-icons/tb'
+import { TbWorld } from 'react-icons/tb'
+import { RiComputerLine } from 'react-icons/ri'
+import { TbSwords } from 'react-icons/tb'
 
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { setMetaCriticColor } from '../../Components/Utils/setMetaCriticColor';
@@ -25,6 +25,9 @@ import DetailGameTab from './Detail Games Tabs';
 
 import ShowMoreText from "react-show-more-text";
 import DetailLikeGames from './Detail Like Games';
+import DetailGameReviews from './Detail Game Reviews';
+import DetailGamesAdditions from './Detail Games Additions';
+import DetailGamesStore from './Detail Games Store';
 
 // import Tabs from '@mui/material/Tabs';
 // import Tab from '@mui/material/Tab';
@@ -51,34 +54,34 @@ const DetailGames = () => {
     dayjs.extend(relativeTime)
     const releasedDate = `${dayjs(detail.released).format('DD MMMM YYYY')} (${dayjs(detail.released).fromNow('yy')})`;
 
-    let developer = detail?.developers?.map(developers => developers.name)
+    // let developer = detail?.developers?.map(developers => developers.name)
     // let platform = detail?.platforms?.map(platforms => platforms.platform.name)
     // console.log(platform);
 
     useEffect(() => {
-        fetch(`https://api.rawg.io/api/games/${id}?key=b8abad1909e84a40a30128c4c9e64c27&dates=2022-09-01,2023-09-30`)
+        fetch(`https://api.rawg.io/api/games/${id}?key=b9bc2788ba394d238eee7389bf54a97a`)
             .then(res => res.json())
             .then(res => setDetail(res))
         // .then(res => console.log(res))
     }, [])
 
     useEffect(() => {
-        fetch(`https://api.rawg.io/api/games/${id}/screenshots?key=b8abad1909e84a40a30128c4c9e64c27&dates=2022-09-01,2023-09-30`)
+        fetch(`https://api.rawg.io/api/games/${id}/screenshots?key=b9bc2788ba394d238eee7389bf54a97a`)
             .then(res => res.json())
             .then(res => setPicture(res))
         // .then(res => console.log(res))
     }, [])
 
     useEffect(() => {
-        fetch(`https://api.rawg.io/api/games/${id}/movies?key=b8abad1909e84a40a30128c4c9e64c27&dates=2022-09-01,2023-09-30`)
+        fetch(`https://api.rawg.io/api/games/${id}/movies?key=b9bc2788ba394d238eee7389bf54a97a`)
             .then(res => res.json())
             .then(res => setMovie(res))
         // .then(res => console.log(res))
     }, [])
 
 
-    console.log(detail);
-    console.log(movie);
+    // console.log(detail);
+    // console.log(movie);
 
     // detail.map((item) => (
     //     console.log(item)
@@ -92,7 +95,7 @@ const DetailGames = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-xl-6 col-lg-6'>
-                        
+
                             <div className='game-detail-image'>
                                 <Swiper
                                     style={{
@@ -147,10 +150,10 @@ const DetailGames = () => {
 
                                     {movie?.results?.map(item =>
                                         <SwiperSlide>
-                                        <Player
+                                            <Player
                                                 playsInline="true"
                                                 src={item?.preview}
-                                            
+
                                                 preload='metadata'
                                                 muted='true'
                                             >
@@ -176,44 +179,51 @@ const DetailGames = () => {
                         </div>
 
                         <div className='col-xl-6 col-lg-6'>
-                            <div className='detail-game-header d-flex justify-content-between align-items-end'>
-                                <div className='detail-game-name'>
+                            <div className='detail-games-header d-flex justify-content-between align-items-center'>
+                                <div className='detail-games-name'>
                                     <h1>{detail.name}</h1>
                                 </div>
-                                <div className='detail-game-score'>
+                                <div className='detail-games-score'>
                                     <abbr title='Metacritic'>
                                         <span className={`${setMetaCriticColor(detail.metacritic)}`}>
                                             {!!detail.metacritic ? detail.metacritic : 0}
                                         </span>
                                     </abbr>
-
                                 </div>
                             </div>
+
                             <div className='detail-games-orginal'>
                                 <p>{detail.alternative_names}</p>
+                            </div>
+                            <div className='detail-game-hours'>
+                                <p>Average Playtime: {detail.playtime} Hours</p>
                                 <hr />
                             </div>
-                            <div className='detail-game-item'>
-                                <div className='detail-game-released d-flex align-items-center'>
-                                    <p><span><AiOutlineClockCircle/></span> Released at: {releasedDate}</p>
+                            <div className='detail-games-item'>
+                                <div className='detail-games-released d-flex align-items-center'>
+                                    <p><span><AiOutlineClockCircle /></span> Released at: {releasedDate}</p>
                                 </div>
                                 <div className='detail-games-developers'>
-                                    <p><span><HiOutlineCode /></span> Developers: {developer}</p>
+                                    <p><span><HiOutlineCode /></span> Developers: {detail?.developers?.map((item, index) =>
+                                        <Link to={`/developers/${item.slug}`}>
+                                            {!!index && ', '}
+                                            {item.name}
+                                        </Link>
+                                    )}</p>
                                 </div>
-                                <div className='detail-game-publisher d-flex flex-wrap'>
-                                    <p><span><TbWorld/></span> Publishers</p>
+                                <div className='detail-games-publisher d-flex flex-wrap'>
+                                    <p><span><TbWorld /></span> Publishers</p>
                                     {detail?.publishers?.map((item, index) =>
                                         <Link to={`/publisher/${item.slug}`}>
                                             {index !== 0 && ', '}
                                             {index == 0 && ': '}
                                             {item.name}
-
                                         </Link>
                                     )}
                                     {/* <Link to={`/publisher/${detail.id}`}>{publisher}</Link> */}
                                 </div>
-                                <div className='detail-game-platforms d-flex flex-wrap'>
-                                    <p><span><RiComputerLine/></span> Platforms</p>
+                                <div className='detail-games-platforms d-flex flex-wrap'>
+                                    <p><span><RiComputerLine /></span> Platforms</p>
                                     {detail?.platforms?.map((item, index) => (
                                         <p>
                                             {index !== 0 && ', '}
@@ -222,43 +232,47 @@ const DetailGames = () => {
                                         </p>
                                     ))}
                                 </div>
-                                <div className='detail-game-genres d-flex'>
-                                    <p><span><TbSwords/></span> Genres</p>
-                                    {detail?.genres?.map((item, index) => 
+                                <div className='detail-games-genres d-flex flex-wrap'>
+                                    <p><span><TbSwords /></span> Genres</p>
+                                    {detail?.genres?.map((item, index) =>
                                         <p>
-                                    {index !==0 && ', '}
-                                    {index ==0 && ': '}
-                                        
-                                        {item.name}
+                                            {index !== 0 && ', '}
+                                            {index == 0 && ': '}
+
+                                            {item.name}
                                         </p>
                                     )}
                                 </div>
-                                <div className='detail-game-website'>
+                                <div className='detail-games-website'>
                                     <a href={detail.website} target='_blank'><button>Website Visit</button></a>
                                 </div>
                             </div>
                         </div>
-                        <div className='detail-game-description'>
-                        <h3>Game Description</h3>
-                        <ShowMoreText
-                /* Default options */
-                lines={10}
-                more="Show more"
-                less="Show less"
-                className="content-css"
-                anchorClass="show-more-less-clickable"
-                expanded={false}
-                truncatedEndingComponent={"... "}
-            >
-                        <p dangerouslySetInnerHTML={{__html: detail.description}}></p>
-            </ShowMoreText>
+                        <div className='detail-games-description'>
+                            <h3>Game Description</h3>
+                            <ShowMoreText
+                                /* Default options */
+                                lines={10}
+                                more="Show more"
+                                less="Show less"
+                                className="content-css"
+                                anchorClass="show-more-less-clickable"
+                                expanded={false}
+                                truncatedEndingComponent={"... "}
+                            >
+                                <p dangerouslySetInnerHTML={{ __html: detail.description }}></p>
+                            </ShowMoreText>
                         </div>
+
                     </div>
                 </div>
             </div>
-                        <DetailGameTab/>
-                        <DetailLikeGames/>
-        
+            <DetailGamesStore />
+            <DetailGameTab />
+            <DetailGamesAdditions />
+            <DetailLikeGames />
+            <DetailGameReviews />
+
         </div>
 
 

@@ -19,8 +19,8 @@ function TrendingGames() {
     <div className='container'>
       <div className='row'>
         <div className='trending-games-caption col-xl-12 col-lg-12 col-md-12 d-flex justify-content-between align-items-center'>
-          <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="350" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out" data-aos-offset="100">Currently Trending Games</p>
-         <Link to="/games"><button data-aos="fade-left" data-aos-duration="2000" data-aos-delay="350" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out" data-aos-offset="100">See all</button></Link>
+          <p data-aos="zoom-in" data-aos-duration="2000">Currently Trending Games</p>
+         <Link to="/games"><button data-aos="zoom-in" data-aos-duration="2000">See all</button></Link>
         </div>
       </div>
       <div className='row'>

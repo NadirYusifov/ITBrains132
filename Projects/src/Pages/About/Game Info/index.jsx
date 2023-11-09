@@ -10,12 +10,12 @@ function GameInfo() {
                 <div className='game-info-section'>
                     <div className='container'>
                         <div className='row d-flex justify-content-between align-items-center'>
-                            <div className='col-xl-6 col-lg-6 col-md-12' data-aos="fade-right" data-aos-offset="100" data-aos-delay="350" data-aos-duration="2000">
+                            <div className='col-xl-6 col-lg-6 col-md-12' data-aos="zoom-in"  data-aos-duration="2000">
                                 <div className='section-intro-image'>
                                     <img src={GameCharacters} />
                                 </div>
                             </div>
-                            <div className='col-xl-5 col-lg-6 col-md-12' data-aos="fade-left" data-aos-offset="100" data-aos-delay="350" data-aos-duration="2000">
+                            <div className='col-xl-5 col-lg-6 col-md-12' data-aos="zoom-in" data-aos-duration="2000">
                                 <div className='section-intro-content'>
                                     <p>Lorem ipsum</p>
                                     <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
