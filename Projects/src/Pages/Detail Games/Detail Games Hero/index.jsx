@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
 // ========== Video React ==========
-import { BigPlayButton } from 'video-react';
+import { BigPlayButton, Player } from 'video-react';
 import "video-react/dist/video-react.css";
 
 // ========== Day.js ==========
