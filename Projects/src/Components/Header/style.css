@@ -79,6 +79,7 @@ li a:focus {
     color: #fff;
     text-decoration: none;
     margin: 0;
+    z-index: 9999;
 }
 
 .contact-btn {

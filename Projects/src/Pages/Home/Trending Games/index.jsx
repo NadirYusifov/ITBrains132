@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import '../Trending Games/style.css'
 import { Link } from 'react-router-dom'
+import '../Trending Games/style.css'
+
+// ========== Meta Critic Settings Add ==========
+import { setMetaCriticColor } from '../../../Components/Utils/setMetaCriticColor'
+
+// ========== Daysjs hooks ==========
+import dayjs from 'dayjs';
+
+// ========== React Icons ==========
+import { AiFillStar } from 'react-icons/ai'
+
+// ========== Image add ==========
+import ImageNoFound from '../../../Assets/image-no-found.jpg'
 
 function TrendingGames() {
     const [games, setgames] = useState([])
 
     useEffect(() => {
-      fetch("https://api.rawg.io/api/games?key=b8abad1909e84a40a30128c4c9e64c27&dates=2022-09-01,2023-09-30")
+      fetch("https://api.rawg.io/api/games?key=b9bc2788ba394d238eee7389bf54a97a")
         .then(res => res.json())
-        .then(res => setgames(res.results.slice(1, 4)))
+        .then(res => setgames(res.results.slice(0,4)))
     }, [])
   
     console.log(games);
@@ -16,41 +28,70 @@ function TrendingGames() {
   return (
     <>
     <section className='trending-games'>
-    <div className='container'>
-      <div className='row'>
-        <div className='trending-games-caption col-xl-12 col-lg-12 col-md-12 d-flex justify-content-between align-items-center'>
-          <p data-aos="zoom-in" data-aos-duration="2000">Currently Trending Games</p>
-         <Link to="/games"><button data-aos="zoom-in" data-aos-duration="2000">See all</button></Link>
-        </div>
-      </div>
-      <div className='row'>
-        {games.map(game => {
-          return <div className="col-xl-4, col-lg-4, col-md-4 pb-4" key={game.trend}>
-            <div className='trending-games-card'>
-              <div className="trending-games-image">
-                <img src={game.background_image} style={{
-                  width: "100%"
-                }} />
-              </div>
-              <div className='trending-games-content' key={game.trend}>
-                <div className='raiting-game d-flex justify-content-between'>
-                  <h4>{game.name}</h4>
+                <div className='container'>
+                    <div className='row'>
+                        {games.length ? <div className='trending-games-content'>
+                            <h3>Trending Games</h3>
+                        </div> : <div className='detail-additions-games-content-error'></div>}
+                    </div>
+                    <div className='trending-games-card'>
+
+                        {games?.map(game =>
+                            <div className="trending-games-card-section " key={game.id}>
+                                <div className="trending-games-image">
+                                    <img src={game.background_image ? game.background_image : ImageNoFound} />
+                                </div>
+                                <div className='trending-games-score d-flex flex-row-reverse'>
+                                    <span className={`${setMetaCriticColor(game.metacritic)}`}>{!!game.metacritic ? game.metacritic : 0} </span>
+                                </div>
+                                <div className='trending-games-content'>
+                                    <div className='trending-games-name d-flex justify-content-between'>
+                                        <Link to={`/detail/${game.slug}`} reloadDocument={`/detail/${game.slug}`}>
+                                            <h4>{game.name}</h4>
+                                        </Link>
+                                    </div>
+                                    <div className='trending-games-ratings d-flex flex-row-reverse align-items-center'>
+                                        <p>{game.rating} <span><AiFillStar /></span></p>
+                                    </div>
+                                </div>
+
+                                <div className='trending-games-card-content-item'>
+                                    <div className='trending-games-released d-flex justify-content-between'>
+                                        <div className='trending-games-released-name'>
+                                            <p>Released at:</p>
+                                        </div>
+                                        <div className='trending-games-released-content'>
+                                            <p>{`${dayjs(game.released).format('DD MMM YYYY')}`}</p>
+                                        </div>
+                                    </div>
+                                    <div className='trending-games-genres d-flex justify-content-between flex-wrap'>
+                                        <div className='trending-games-genres-name'>
+                                            <p>Genres:</p>
+                                        </div>
+                                        <div className='detail-game-additions-genres-content d-flex'>
+                                            {
+                                                game?.genres?.map((item, index) =>
+                                                    <p>
+                                                        {!!index && ', '}
+                                                        {item.name}
+                                                    </p>
+                                                )
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                    <div className='trending-games-button d-flex justify-content-center'>
+                        {parent.length > 3 && load &&
+                            <button onClick={loadButton}>
+                                Show more
+                            </button>
+                        }
+                    </div>
                 </div>
-              </div>
-              <div className='trend-genres d-flex flex-wrap'>
-                {game.genres.map(games => (
-                  <p key={games.trend}>{games.name}</p>
-                ))}
-              </div>
-              <div className='trending-raiting d-flex flex-row-reverse' key={games.trend}>
-                <p><b>Raitings:</b> {game.rating}</p>
-              </div>
-            </div>
-          </div>
-        })}
-      </div>
-    </div>
-  </section>
+            </section>
   </>
   )
 }

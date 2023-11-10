@@ -1,130 +1,177 @@
-/* ========== Home Section 2 Start (Trending Games) ========== */
+/* ========== Detail Games Section 4 Start (Games Additions) ========== */
+.trending-games{
+    padding-bottom: 130px;
+}
 
-.trending-games {
-    padding-bottom: 170px;
+.trending-games-card-section{
+    padding-top: 130px;
+    padding-bottom: 110px;
+}
+
+.trending-games-content h3{
+    margin-bottom: 50px;
+}
+
+.trending-games-card-section{
+    position: relative;
+    transition: all .7s ease-in-out;
+    border-radius: 8px;
+    background-color: #fa9021;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+.trending-games-card-section:hover{
+    transform: translateY(-10px);
+    z-index: 2;
+    height: 130%;
+}
+
+.trending-games-card-content-item{
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: visible;
+    z-index: -2;
+    padding: 10px 10px 10px 10px;
+}
+
+.trending-games-card-section:hover .trending-games-card-content-item{
+    opacity: 1;
+    visibility: visible;
 }
 
 .trending-games-image img {
-    border-radius: 5px;
-    background-size: cover;
+    width: 100%;
+    height: 170px;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
-.trending-games-caption {
-    font-family: Poppins;
-    color: #fff;
-    padding-bottom: 25px;
+.trending-games-score span{
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 3px 5px 3px 5px; 
+    margin: 10px 0 0 0;
 }
 
-.trending-games-caption p {
-    font-size: 25px;
-    margin: 0;
-}
-
-.trending-games-caption button {
-    color: #fff;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.11);
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-}
-
-.trending-games-card {
-    height: 100%;
-    padding: 10px 10px 0 10px;
-    background: #FFB75E;
-    background: linear-gradient(to right, #ED8F03, #FFB75E);
-    box-shadow: 0 15px 15px #00000053;
-    border-radius: 5px;
-}
-
-.trending-games-content h4 {
-    padding: 15px 15px 0 15px;
-    font-family: Poppins;
+.trending-games-ratings p{
+    border-radius: 8px;
+    color: black;
     font-weight: 600;
-    font-size: 25px;
-    overflow: hidden;
+    padding: 2px 5px 2px 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.296);
+}
+
+.trending-games-ratings span{
+    color: yellow;
+}
+
+.trending-games-name a {
+    padding: 15px 0 0 0;
+    text-decoration: none;
+    margin: 0;
+    color: black;
+}
+
+.trending-games-name h4 {
     margin: 0;
 }
 
-.trending-raiting p {
-    padding: 0 15px 0 15px;
-    font-family: Poppins;
-    font-weight: 500;
+.trending-games-name:hover{
+    opacity: .7;
+}
+
+.trending-games-content{
+    color: #fff;
+}
+
+.trending-games-genres{
     font-size: 14px;
-
+    font-weight: 600;
 }
 
-.trend-genres p {
-    font-size: 12px;
-    font-family: Poppins;
-    font-weight: 500;
+.trending-games-released{
+    font-size: 14px;
+    font-weight: 600;
 }
 
-/* ========== Home Section 2 End (Trending Gmaes) ==========*/
+.trending-games-content-error{
+    display: none;
+}
+
+.trending-games-button button{
+    border: none;
+    border-radius: 8px;
+    background-color: #fa9021;
+    color: #fff;
+    padding: 10px 25px 10px 25px;
+    font-size: 18px;
+    margin-top: 100px;
+    transition: all ease-in-out .5s;
+}
+
+.trending-games-button button:hover{
+    box-shadow: 0 0 5px #FA9021,
+            0 0 10px #FA9021,
+            0 0 20px #FA9021,
+            0 0 30px #FA9021;
+}
 
 
-/* ========== Responsive Start ========== */
-
+/* ========== Responsive Start ==========*/
 @media screen and (max-width: 576px) {
-    .trending-games-card {
-        height: 100%;
-        padding: 10px 10px 10px;
-        background: #FFB75E;
-        background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
-        background: linear-gradient(to right, #ED8F03, #FFB75E);
-        box-shadow: 0 15px 15px #00000053;
-        border-radius: 5px;
+    .trending-games-card{
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .trending-games-caption p {
-        font-size: 25px;
-        padding-right: 10px;
-        margin: 0;
-    }
-
-    .trend-genres p {
-        display: flex;
-        flex-direction: column-reverse;
-        font-size: 16px;
-        font-family: Poppins;
-        font-weight: 500;
-        padding: 15px 0 0 10px;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .trending-games-card{
+        display: grid;
+        grid-template-columns: repeat(autofit, 1fr);
+        gap: 20px;
     }
 }
 
-@media screen and (max-width: 992px) {
-
-    .trend-genres p {
-        font-size: 16px;
-        font-family: Poppins;
-        font-weight: 600;
-        padding: 15px 0 0 10px;
-    }
-
-    .trending-games-content h4 {
-        padding: 15px 10px 0 10px;
-        font-family: Poppins;
-        font-weight: 600;
-        font-size: 20px;
-        overflow: hidden;
-        margin: 0;
-    }
-
-    .trending-games-content p {
-        padding: 15px 10px 0 10px;
-        font-family: Poppins;
-        font-size: 15px;
-        font-weight: 500;
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .trending-games-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
-@media screen and (max-width:1200px) {
-    .trend-genres p {
-        display: flex;
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .trending-games-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
 
-/* ========== Responsive End ==========  */
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .trending-games-card{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .trending-games-card{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+/*========== Responsive End ==========*/
+
+/* ========== Detail Games Section 4 End (Games Additions) ========== */

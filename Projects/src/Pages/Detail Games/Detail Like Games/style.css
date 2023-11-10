@@ -18,7 +18,6 @@
     border-radius: 8px;
     background-color: #fa9021;
     position: relative;
-    z-index: 2;
     padding: 10px 10px 10px 10px;
 }
 
@@ -74,6 +73,7 @@
 }
 
 .detail-like-game-name a {
+    color: black;
     padding: 15px 0 0 0;
     text-decoration: none;
     margin: 0;
@@ -83,8 +83,9 @@
     opacity: .7;
 }
 
-.detail-like-games-content a{
-    color: black;
+.detail-like-games-content h3{
+    padding-top: 100px;
+    color: #fff;
 }
 
 .detail-like-games-content-error {

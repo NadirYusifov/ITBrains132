@@ -1,4 +1,4 @@
-
+/* ========== Detail Games Section 1 Start (Games Hero) ========== */
 
 .games-detail {
     padding-top: 30px;
@@ -6,24 +6,11 @@
     font-family: Poppins;
 }
 
-.detail-games-description {
-    padding-top: 80px;
-}
-
 .detail-games-item p,
 a,
 span {
     font-size: 18px;
     margin-bottom: 20px;
-}
-
-.detail-games-description h3 {
-    padding-bottom: 15px;
-}
-
-.detail-games-description p {
-    font-size: 16px;
-    line-height: 1.7;
 }
 
 .game-detail-image img {
@@ -149,3 +136,5 @@ span {
 }
 
 /* ========== Responsive End ========== */
+
+/* ========== Detail Games Section 1 End (Games Hero) ========== */

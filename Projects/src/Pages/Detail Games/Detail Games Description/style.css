@@ -1,0 +1,17 @@
+/* ========== Detail Games Section 2 Start (Games Description) ========== */
+
+.detail-games-description {
+    padding-top: 80px;
+    color: #fff;
+}
+
+.detail-games-description-item h3 {
+    padding-bottom: 15px;
+}
+
+.detail-games-description-item p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ========== Detail Games Section 2 End (Games Description) ========== */

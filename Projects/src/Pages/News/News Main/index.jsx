@@ -91,7 +91,7 @@ function NewsSection() {
                   <div className='news-right-image d-flex'>
                     <img src={item.urlToImage} />
                   <div className='news-right-title'>
-                    <a href={item.url}>
+                    <a target='_blank' href={item.url}>
                   {item.title}
                     </a>
                   </div>
