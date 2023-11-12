@@ -27,7 +27,7 @@ import { RiComputerLine } from 'react-icons/ri'
 import { TbSwords } from 'react-icons/tb'
 
 // ========== Metacritic Color ==========
-import { setMetaCriticColor } from '../../../Components/Utils/setMetaCriticColor';
+import { setMetaCriticColor } from '../../../Utils/setMetaCriticColor';
 
 // ========== Style.css ==========
 import '../Detail Games Hero/style.css'

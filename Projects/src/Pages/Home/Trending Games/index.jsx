@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../Trending Games/style.css'
 
 // ========== Meta Critic Settings Add ==========
-import { setMetaCriticColor } from '../../../Components/Utils/setMetaCriticColor'
+import { setMetaCriticColor } from '../../../Utils/setMetaCriticColor'
 
 // ========== Daysjs hooks ==========
 import dayjs from 'dayjs';

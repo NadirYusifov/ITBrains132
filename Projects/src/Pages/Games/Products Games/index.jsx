@@ -4,7 +4,7 @@ import "../Products Games/style.css"
 import { Pagination } from '@mui/material';
 
 // ========== Meta Critic Settings Add ==========
-import { setMetaCriticColor } from '../../../Components/Utils/setMetaCriticColor'
+import { setMetaCriticColor } from '../../../Utils/setMetaCriticColor'
 
 // ========== Daysjs hooks ==========
 import dayjs from 'dayjs';
@@ -23,7 +23,7 @@ function ProductsGames() {
   const [page, setPage] = useState(1)
 
   useEffect(() => {
-    fetch(`https://api.rawg.io/api/games?key=b9bc2788ba394d238eee7389bf54a97a&page=${page}&page_size=40`)
+    fetch(`https://api.rawg.io/api/games?key=b9bc2788ba394d238eee7389bf54a97a&page=${page}&page_size=40&ordering=-added`)
       .then(res => res.json())
       // .then(res => console.log(res))
       .then(res => setGames(res.results))

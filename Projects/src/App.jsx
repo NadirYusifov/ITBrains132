@@ -17,6 +17,7 @@ import ScrollToTop from "./Components/Scroll Top Page/ScrollTopPage";
 import BackToTopButton from "./Components/Back To Top Button";
 import DetailGameTab from "./Pages/Detail Games/Detail Games Tabs";
 import GameDevelopers from "./Pages/Developers";
+import ErrorPage from "./Pages/Error";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <Header />
       <ScrollToTop />
       <Routes>
+      <Route element={<ErrorPage />} path="*" />
         <Route element={<Home />} path="/" />
         <Route element={<News />} path="/news" />
         <Route element={<About />} path="/about" />

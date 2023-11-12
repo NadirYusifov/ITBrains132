@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 // ========== Meta Critic Settings Add ==========
-import { setMetaCriticColor } from '../../../Components/Utils/setMetaCriticColor'
+import { setMetaCriticColor } from '../../../Utils/setMetaCriticColor'
 
 // ========== Daysjs hooks ==========
 import dayjs from 'dayjs';
@@ -31,40 +31,40 @@ function PublisherGames() {
     return (
         <>
         {/* ========== Publisher Games Section 2 Start ========== */}
-            <section className='product-games-section-2'>
+            <section className='publisher-games-section-2'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='product-games-card'>
+                        <div className='publisher-games-card'>
                             {game?.map(item =>
-                                <div className="product-games-card-section " key={game.id}>
-                                    <div className="product-games-image">
+                                <div className="publisher-games-card-section " key={game.id}>
+                                    <div className="publisher-games-image">
                                         <img src={item.background_image ? item.background_image : ImageNoFound} />
                                     </div>
-                                    <div className='product-games-score d-flex flex-row-reverse'>
+                                    <div className='publisher-games-score d-flex flex-row-reverse'>
                                         <span className={`${setMetaCriticColor(game.metacritic)}`}>{!!item.metacritic ? item.metacritic : 0} </span>
                                     </div>
-                                    <div className='product-games-content'>
-                                        <div className='product-games-name d-flex justify-content-between'>
+                                    <div className='publisher-games-content'>
+                                        <div className='publisher-games-name d-flex justify-content-between'>
                                             <Link to={`/detail/${item.slug}`} reloadDocument={`/detail/${item.slug}`}>
                                                 <h4>{item.name}</h4>
                                             </Link>
                                         </div>
-                                        <div className='product-games-ratings d-flex flex-row-reverse align-items-center'>
+                                        <div className='publisher-games-ratings d-flex flex-row-reverse align-items-center'>
                                             <p>{item.rating} <span><AiFillStar /></span></p>
                                         </div>
                                     </div>
 
-                                    <div className='product-games-card-content-item'>
-                                        <div className='product-games-released d-flex justify-content-between'>
-                                            <div className='product-games-released-name'>
+                                    <div className='publisher-games-card-content-item'>
+                                        <div className='publisher-games-released d-flex justify-content-between'>
+                                            <div className='publisher-games-released-name'>
                                                 <p>Released at:</p>
                                             </div>
-                                            <div className='product-games-released-content'>
+                                            <div className='publisher-games-released-content'>
                                                 <p>{`${dayjs(item.released).format('DD MMM YYYY')}`}</p>
                                             </div>
                                         </div>
-                                        <div className='product-games-genres d-flex justify-content-between flex-wrap'>
-                                            <div className='product-games-genres-name'>
+                                        <div className='publisher-games-genres d-flex justify-content-between flex-wrap'>
+                                            <div className='publisher-games-genres-name'>
                                                 <p>Genres:</p>
                                             </div>
                                             <div className='detail-game-additions-genres-content d-flex'>
@@ -82,7 +82,7 @@ function PublisherGames() {
                                 </div>
                             )}
                         </div>
-                        <div className='product-games-button d-flex justify-content-center'>
+                        <div className='publisher-games-button d-flex justify-content-center'>
                             {parent.length > 3 && load &&
                                 <button onClick={loadButton}>
                                     Show more

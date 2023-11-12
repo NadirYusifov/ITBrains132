@@ -1,0 +1,18 @@
+.metacritic-{
+    display: none;
+}
+
+.metacritic-green{
+    color: #ffffff95;
+    background-color: darkgreen;
+}
+
+.metacritic-yellow{
+    color: rgba(0, 0, 0, 0.704);
+    background-color: #ffbd3f;
+}
+
+.metacritic-gray{
+    color: #ffffff95;
+    background-color: #ff6874;
+}

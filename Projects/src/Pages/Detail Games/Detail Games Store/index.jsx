@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 // ========== Store logo add ==========
-import storesLogo from '../../../Components/Utils/setStoreLogo'
+import storesLogo from '../../../Utils/setStoreLogo'
 
 // ========== Style.css ==========
 import '../Detail Games Store/style.css'

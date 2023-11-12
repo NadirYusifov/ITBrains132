@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 
 // ========== Metacritic add ==========
-import { setMetaCriticColor } from '../../../Components/Utils/setMetaCriticColor'
+import { setMetaCriticColor } from '../../../Utils/setMetaCriticColor'
 
 // ========== Dayjs ==========
 import dayjs from 'dayjs';
